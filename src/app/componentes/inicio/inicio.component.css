@@ -1,0 +1,34 @@
+@font-face {
+    font-family: 'LexendSemiBold';
+    src: url('../../../assets/LexendDeca-SemiBold.ttf');
+}
+#banner{
+    max-width:100%;
+    position:fixed;
+}
+#logoSIA{
+    position: absolute;
+    top:20%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width:15%;
+}
+
+#logoSIA:hover{
+    width:20%;
+    top:15%;
+}
+
+.presentacion{
+    width:100%;
+    position:absolute;
+    top: 45%;
+    background-color:0,0,0,0;
+}
+.presentacion h4{
+    font-family: 'LexendSemiBold';
+    text-align: center;
+    line-height: 2.5rem;
+    color:white;
+}

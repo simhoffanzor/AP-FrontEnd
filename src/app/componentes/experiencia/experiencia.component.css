@@ -1,0 +1,30 @@
+@font-face {
+    font-family: 'LexendMedium';
+    src: url(../../../assets/LexendDeca-Medium.ttf);
+}
+
+#fondo{
+    max-width:100%;
+    position:fixed;
+    margin:auto;
+}
+
+.titulo{
+    width:100%;
+    position:fixed;
+    top: 15%;
+    left:1%;
+    background-color:0,0,0,0;
+}
+.titulo h1{
+    font-family: 'LexendMedium';
+    text-align: center;
+    font-size:3.5rem;
+    color:#21252a;
+    letter-spacing: 1.7rem;
+}
+
+.titulo span{
+    color:white;
+}
+
