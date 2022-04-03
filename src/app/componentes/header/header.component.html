@@ -29,7 +29,11 @@
             </a></li>
         </ul>
         <ul class="navbar-nav sm-icons mr-0">
-            <app-button btntext="Logueate"></app-button>
+            <app-button 
+                btntext="Login"
+                (btnClick)="toggleLogin()"  
+            >
+            </app-button>
         </ul>
     </div>
 </nav>

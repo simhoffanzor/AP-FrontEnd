@@ -11,4 +11,8 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+  toggleLogin(){
+    alert("Me clickeaste dentro del header");
+  }
 }
