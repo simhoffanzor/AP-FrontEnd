@@ -1,5 +1,20 @@
 .item-proyecto {
-    background-color: #f4f4f4;
     margin:2%;
+    width:30%;
+    margin:auto;
     padding: 10px 20px;
+    font-size:0.8rem;
+}
+
+.item-proyecto:hover{
+    width:50%;
+    font-size:1.1rem;
+}
+
+.card-body{
+    text-align: center;
+}
+
+.foto-proyecto{
+    width:70%;
 }

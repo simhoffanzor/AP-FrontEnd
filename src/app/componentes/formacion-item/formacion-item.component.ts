@@ -14,4 +14,5 @@ export class FormacionItemComponent implements OnInit {
   ngOnInit(): void {
   }
 
+
 }

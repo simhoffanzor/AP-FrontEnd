@@ -1,7 +1,18 @@
-<div 
-    class="item-proyecto"
-    >
-    <h5>{{proyecto.nombre}}</h5>
-    <p>{{proyecto.fecha}}
-    </p>
+<div class="item-proyecto">
+
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">{{proyecto.nombre}}</h5>
+            <p class="card-text"><i>{{proyecto.fecha}}</i></p>
+            <p class="card-text">{{proyecto.descripcion}}</p>
+            <a href="{{proyecto.url}}" target="_blank">
+                <img 
+                class="foto-proyecto"
+                src="{{proyecto.fotoProyecto}}"
+            />
+            </a>
+            
+        </div>
+        
+    </div>
 </div>

@@ -40,10 +40,67 @@
   "estudios": [
     {
       "id": 1,
-      "titulo": "some comment",
-      "institucion": "UCM",
-      "fechaInicio": "2020",
-      "fechaFinal": "2022"
+      "titulo": "Full Stack Web Developer Jr.",
+      "institucion": "Argentina Programa",
+      "periodo": "2020 - 2022",
+      "fotoEstudio": "https://yt3.ggpht.com/9upo5zbtXzvItj8IMHF1X9hI95x4YOeGCApLk1DhMQCHftmJvf2GWmbJXrC1TKCrn-AyQ2txBw=s900-c-k-c0x00ffffff-no-rj",
+      "certificado": ""
+    },
+    {
+      "id": 2,
+      "titulo": "Java para Principiantes",
+      "institucion": "TodoCode Academy",
+      "periodo": "2022",
+      "fotoEstudio": "https://todocodeacademy.com/wp-content/uploads/2020/09/icono.ico",
+      "certificado": "https://todocodeacademy.com/certificate/java-para-principiantes-89/"
+    },
+    {
+      "id": 3,
+      "titulo":"Fundamentos de Programación en Java y JS",
+      "institucion":"Udemy",
+      "periodo":"2020 - 2021",
+      "fotoEstudio":"https://pbs.twimg.com/profile_images/1415324297304977411/p9kTpGac_400x400.png",
+      "certificado":""
+    },
+    {
+      "id": 4,
+      "titulo":"Introducción en Git y Github",
+      "institucion":"TodoCode Academy",
+      "periodo":"2022",
+      "fotoEstudio":"https://todocodeacademy.com/wp-content/uploads/2020/09/icono.ico",
+      "certificado":""
+    },
+    {
+      "id": 5,
+      "titulo":"Introducción a los Algoritmos y la Programación",
+      "institucion":"TodoCode Academy",
+      "periodo":"2022",
+      "fotoEstudio":"https://todocodeacademy.com/wp-content/uploads/2020/09/icono.ico",
+      "certificado":"https://todocodeacademy.com/certificate/introduccion-a-los-algoritmos-y-la-programacion-583/"
+    },
+    {
+      "id": 6,
+      "titulo":"Desarrollo de Apps Móviles",
+      "institucion":"Google Activate y UCM (Madrid)",
+      "periodo":"2021",
+      "fotoEstudio":"https://scontent.fmdq1-1.fna.fbcdn.net/v/t1.6435-9/72617429_1359069220924047_2596836415136333824_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=kM4jaGCv7fwAX9c72LW&_nc_ht=scontent.fmdq1-1.fna&oh=00_AT-dGB44jpD594ApSbbgNecwq5zzJOA34aBiYT41xhHnTw&oe=62722443",
+      "certificado":""
+    },
+    {
+      "id": 7,
+      "titulo":"Desarrollo Web en HTML y CSS",
+      "institucion":"Google Activate y UCM (Madrid)",
+      "periodo":"2021 - 2022",
+      "fotoEstudio":"https://scontent.fmdq1-1.fna.fbcdn.net/v/t1.6435-9/72617429_1359069220924047_2596836415136333824_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=kM4jaGCv7fwAX9c72LW&_nc_ht=scontent.fmdq1-1.fna&oh=00_AT-dGB44jpD594ApSbbgNecwq5zzJOA34aBiYT41xhHnTw&oe=62722443",
+      "certificado":""
+    },
+    {
+      "id": 8,
+      "titulo":"Master en Python",
+      "institucion":"Udemy",
+      "periodo":"2021 - Continúa",
+      "fotoEstudio":"https://pbs.twimg.com/profile_images/1415324297304977411/p9kTpGac_400x400.png",
+      "certificado":""
     }
   ],
   "skills": [
@@ -57,17 +114,26 @@
     {
       "id": 1,
       "nombre": "Space Scape",
-      "fecha": "2021"
+      "fecha": "2021",
+      "descripcion":"Juego retro desarrollado en Processing; tendrás que recolectar toda la gasolina posible en tu nave sin permitir que los marcianos te atrapen.",
+      "fotoProyecto":"https://media.istockphoto.com/photos/the-milky-way-star-scape-picture-id537689682?k=20&m=537689682&s=612x612&w=0&h=2DtAvlrdAIUSMYZRrWIADRMM6MOuR2Z_ASoX7EzfBdQ=",
+      "url": "https://github.com/simhoffanzor/space_scape"
     },
     {
       "id": 2,
       "nombre": "Dibujando con Mondrian",
-      "fecha": "2021"
+      "fecha": "2021",
+      "descripcion":"Aplicación interactiva para que conozcas algunas de las obras del artista Mondrian, creando tus propias adaptaciones con tu mouse como pincel y simples atajos para pintar utilizando los colores primarios.",
+      "fotoProyecto":"https://www3.gobiernodecanarias.org/medusa/ecoescuela/sa/files/formidable/6/mondrian-1504681_960_720.png",
+      "url":"https://github.com/simhoffanzor/dibujando_mondrian"
     },
     {
       "id": 3,
       "nombre": "Portfolio web",
-      "fecha": "2021"
+      "fecha": "2021",
+      "descripcion":"Trabajo final para el Bootcamp de Full Stack Web Developer Jr.",
+      "fotoProyecto":"https://www.hostinger.es/tutoriales/wp-content/uploads/sites/7/2019/04/brando-plantilla-portfolio-premium.jpg",
+      "url":"https://github.com/simhoffanzor/miPortfolioWeb"
     }
   ]
 }

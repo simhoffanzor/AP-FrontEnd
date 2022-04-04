@@ -1,7 +1,28 @@
 <div 
     class="item-formacion"
     >
-    <h5>{{estudio.titulo}} || {{estudio.institucion}}
-    </h5>
-    <p>{{estudio.fechaInicio}} - {{estudio.fechaFinal}}</p>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-2">
+                <img 
+                    src="{{estudio.fotoEstudio}}"
+                    alt="Logo de la institución"
+                    class="foto-estudio"
+                />
+            </div>
+            <div class="col">
+                <h5>{{estudio.titulo}} || {{estudio.institucion}}</h5>
+                <p class="fechas">{{estudio.periodo}}</p>
+            </div>
+            <div 
+                class="col-3"
+                >
+                <a 
+                    *ngIf="estudio.certificado"
+                    href="{{estudio.certificado}}"
+                    target="_blank"
+                >Certificado</a>
+            </div>
+        </div>    
+    </div>
 </div>
