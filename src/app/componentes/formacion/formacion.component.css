@@ -3,17 +3,8 @@
     src: url(../../../assets/LexendDeca-Medium.ttf);
 }
 
-#fondo{
-    max-width:100%;
-    margin-left: -50%;
-    position:fixed;
-}
-
 .titulo{
     width:100%;
-    position:fixed;
-    top: 15%;
-    left:6%;
     background-color:0,0,0,0;
 }
 .titulo h1{
@@ -27,4 +18,13 @@
 .titulo span{
     color:white;
 }
+.estudios {
+    margin-top:3%;
+}
 
+.form{
+    background-image: url('../../../assets/fondoExperiencia.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height:100vh;
+}

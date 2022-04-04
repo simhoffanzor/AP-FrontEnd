@@ -5,5 +5,9 @@
         <h1><span>SOBRE</span> MI
         </h1>
     </div>
-
+    <app-sobre-mi-items
+    *ngFor="let usuario of usuarios"
+    [usuario] = "usuario"
+    ></app-sobre-mi-items>   
+    
 </div>

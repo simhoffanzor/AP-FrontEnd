@@ -1,9 +1,12 @@
-<div>
-    <img src="../../../assets/fondoExperiencia.png" alt="Portfolio S. Imhoff Anzor" id="fondo">
-    
-    <div class="titulo">
-        <h1>MI EXPERIE<span>NCIA</span>
+<div class="exp">
+<div class="titulo">
+        <h1>MI EXPERIEN<span>CIA</span>
         </h1>
     </div>
-
+    <div class="trabajos">
+    <app-experiencia-item
+        *ngFor="let trabajo of trabajos"
+        [trabajo] = "trabajo"
+    ></app-experiencia-item>
+    </div>
 </div>

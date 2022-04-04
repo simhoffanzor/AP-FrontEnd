@@ -1,0 +1,60 @@
+{
+  "usuarios": [
+    {
+      "id": 1,
+      "nombre": "Sharon",
+      "apellido": "Imhoff Anzor",
+      "descripcion": "Soy una persona muy responsable, capaz y de rápido aprendizaje, que disfruta del trabajo en equipo y plantearse desafíos en el área laboral. Soy dedicada y perseverante, prolija y autodidacta. Cuando me encuentro con un desafío o problema que no sé resolver, no me detengo hasta haber podido resolverlo.", 
+      "foto": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgFvZyBIq-a66l3OZawucQ8rNEKBpsoLyB5kDcBd0J2cYCnied4rDvPWZd9sNAY2AILng&usqp=CAU"
+    }
+  ],
+  "trabajos": [
+    {
+      "id": 1,
+      "puesto": "Docente",
+      "lugar": "Ministerio de Educación",
+      "fechaInicio": "2016",
+      "fechaFinal": "Continúa"
+    },
+    {
+      "id": 2,
+      "puesto": "Maquetas en HTML",
+      "lugar": "Freelancer",
+      "fechaInicio": "Junio 2021",
+      "fechaFinal": "Diciembre 2021"
+    }
+  ],
+  "estudios": [
+    {
+      "id": 1,
+      "titulo": "some comment",
+      "institucion": "UCM",
+      "fechaInicio": "2020",
+      "fechaFinal": "2022"
+    }
+  ],
+  "skills": [
+    {
+      "id": 1,
+      "nombre": "some comment",
+      "nivel": 1
+    }
+  ],
+  "proyectos": [
+    {
+      "id": 1,
+      "nombre": "Space Scape",
+      "fecha": "2021"
+    },
+    {
+      "id": 2,
+      "nombre": "Dibujando con Mondrian",
+      "fecha": "2021"
+    },
+    {
+      "id": 3,
+      "nombre": "Portfolio web",
+      "fecha": "2021"
+    }
+  ]
+}

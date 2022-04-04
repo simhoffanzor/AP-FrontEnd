@@ -1,9 +1,15 @@
-<div>
-    <img src="../../../assets/fondoDifuminado.png" alt="Portfolio S. Imhoff Anzor" id="fondo">
-    
+<div class="form">
     <div class="titulo">
-        <h1><span>MI FO</span>RMACIÓN
+        <h1>MI FORMACI<span>ÓN</span>
         </h1>
     </div>
+
+    <div class="estudios">
+        <app-formacion-item
+            *ngFor="let estudio of estudios"
+            [estudio] = "estudio"
+        ></app-formacion-item>
+     
+        </div>
 
 </div>

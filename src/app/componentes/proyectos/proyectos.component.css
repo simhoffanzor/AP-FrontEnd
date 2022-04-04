@@ -3,16 +3,8 @@
     src: url(../../../assets/LexendDeca-Medium.ttf);
 }
 
-#fondo{
-    max-width:100%;
-    position:fixed;
-}
-
 .titulo{
     width:100%;
-    position:fixed;
-    top: 15%;
-    left:6%;
     background-color:0,0,0,0;
 }
 .titulo h1{
@@ -21,4 +13,12 @@
     font-size:3.5rem;
     color:white;
     letter-spacing: 1.7rem;
+}
+
+.proy{
+    margin-bottom: 5%;
+    background-image: url("../../../assets/fondoProyectos.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height:100vh;
 }

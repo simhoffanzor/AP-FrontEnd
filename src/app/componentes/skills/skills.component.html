@@ -1,9 +1,11 @@
-<div>
-    <img src="../../../assets/fondoDifuminado.png" alt="Portfolio S. Imhoff Anzor" id="fondo">
-    
+<div class="ski">
     <div class="titulo">
         <h1>SKILLS
         </h1>
     </div>
 
+    <app-skills-item
+        *ngFor="let skill of skills"
+        [skill]="skill"
+    ></app-skills-item>
 </div>

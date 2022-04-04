@@ -1,9 +1,11 @@
-<div>
-    <img src="../../../assets/fondoProyectos.png" alt="Portfolio S. Imhoff Anzor" id="fondo">
-    
+<div class="proy">
     <div class="titulo">
         <h1>PROYECTOS
         </h1>
     </div>
 
+    <app-proyectos-item
+        *ngFor="let proyecto of proyectos"
+        [proyecto] = "proyecto">
+    </app-proyectos-item>
 </div>

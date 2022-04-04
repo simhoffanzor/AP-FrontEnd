@@ -1,0 +1,21 @@
+.item-usuario {
+    position:fixed;
+    margin-top:12%;
+    margin-left:40%;
+    margin-right:5%;
+}
+
+p{
+    font-size: 1.1rem;
+    line-height: 2.5rem;
+}
+
+.fotoPerfil{
+    border-radius: 50%;
+    width:35%;
+    margin-bottom:5%;
+    margin-right:5%;
+    display:block;
+    float:left;
+    
+}
