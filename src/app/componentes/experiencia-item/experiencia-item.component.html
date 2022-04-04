@@ -1,7 +1,22 @@
 <div 
     class="item-trabajo"
     >
-    <h5>{{trabajo.puesto}} || {{trabajo.lugar}}
-    </h5>
-    <p>{{trabajo.fechaInicio}} - {{trabajo.fechaFinal}}</p>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-2">
+                <img 
+                    src="{{trabajo.fotoLugar}}"
+                    alt="Institución o afines"
+                    class="foto-trabajo"
+                />
+            </div>
+            <div class="col">
+                <h5>{{trabajo.puesto}} || {{trabajo.lugar}}
+                </h5>
+                <p class="fechas"><i>{{trabajo.fechaInicio}} - {{trabajo.fechaFinal}}</i></p>
+                <p>{{trabajo.descripcion}}</p>
+            </div>
+        </div>    
+    </div>
+    
 </div>

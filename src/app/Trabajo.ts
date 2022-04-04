@@ -4,4 +4,6 @@ export interface Trabajo {
     lugar: string;
     fechaInicio: string;
     fechaFinal: string;
+    descripcion: string;
+    fotoLugar: string;
 }

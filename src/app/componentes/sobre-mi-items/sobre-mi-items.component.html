@@ -1,14 +1,22 @@
 <div 
     class="item-usuario"
     >
-    <img 
-        src="{{usuario.foto}}" 
-        alt="Foto de Perfil"
-        class="fotoPerfil"
-    />
-    <h3>Mi nombre es {{usuario.nombre}} {{usuario.apellido}}.</h3>
-    <p>
-    {{usuario.descripcion}}
-    </p>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-2">
+                <img 
+                    src="{{usuario.foto}}" 
+                    alt="Foto de Perfil"
+                    class="fotoPerfil"
+                />
+            </div>
+            <div class="col">
+                <h3>Mi nombre es {{usuario.nombre}} {{usuario.apellido}}.</h3>
+                <p>
+                {{usuario.descripcion}}
+                </p>
+            </div>
+        </div>
+    </div>
 
 </div>

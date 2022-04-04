@@ -11,17 +11,30 @@
   "trabajos": [
     {
       "id": 1,
-      "puesto": "Docente",
-      "lugar": "Ministerio de Educación",
-      "fechaInicio": "2016",
-      "fechaFinal": "Continúa"
+      "puesto": "Maquetado de Web Pages",
+      "lugar": "Freelancer",
+      "fechaInicio": "2021",
+      "fechaFinal": "2022",
+      "descripcion": "Maquetado de páginas web (Front End) en Angular utilizando HTML5 y CSS3 a través de la plataforma Freelancer para una empresa de Uruguay.",
+      "fotoLugar": "https://www.siliconweek.com/wp-content/uploads/2013/04/freelancer-logo.jpg"
     },
     {
       "id": 2,
-      "puesto": "Maquetas en HTML",
-      "lugar": "Freelancer",
-      "fechaInicio": "Junio 2021",
-      "fechaFinal": "Diciembre 2021"
+      "puesto": "Enseñanza de Artes Musicales",
+      "lugar": "Ministerio de Educación",
+      "fechaInicio": "2016",
+      "fechaFinal": "Continúa",
+      "descripcion": "Profesora de música en escuelas primarias de la provincia del Chubut (Argentina) y en el Instituto Superior de Formación Docente Artística Nº805 liderando la asignatura de Ensamble Grupal.",
+      "fotoLugar": "https://scontent.fmdq1-1.fna.fbcdn.net/v/t1.6435-9/52590180_2240921702814641_1434773334632955904_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=5K-2a1PNMJkAX9OUo9s&_nc_ht=scontent.fmdq1-1.fna&oh=00_AT8IqK0G5kq8vi_j6G5-bCLqJPOLo_Kk0-L5-GnzKwTyVg&oe=6270C900"
+    },
+    {
+      "id": 3,
+      "puesto": "Tutoría de Java en Processing 3",
+      "lugar": "Remoto",
+      "fechaInicio": "2020",
+      "fechaFinal": "2022",
+      "descripcion": "Tutoría a dos estudiantes de la carrera 'Licenciatura en Artes y Tecnologías' de la UNQ (Argentina) sobre programación en Java aplicado al entorno de desarrollo de Processing 3, realizando dos aplicaciones interactivas.",
+      "fotoLugar": "http://vjspain.com/wp-content/uploads/2015/10/processing3-logo.png"
     }
   ],
   "estudios": [

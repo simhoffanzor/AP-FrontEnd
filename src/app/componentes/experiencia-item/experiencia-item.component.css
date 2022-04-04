@@ -1,5 +1,25 @@
 .item-trabajo{
-    background-color: #f4f4f4;
     margin:2%;
     padding: 10px 20px;
+    width:60%;
+    border-bottom: solid lightslategray 0.5px;
+}
+
+.foto-trabajo{
+    border-radius: 50%;
+    width:80%;
+    display:block;
+}
+
+.col-2{
+    width:25%;
+}
+
+.col{
+    width:75%;
+    margin-right:0%;
+}
+
+.fechas{
+    font-size: 0.9rem;
 }
