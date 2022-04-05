@@ -1,7 +1,3 @@
-@font-face {
-    font-family: 'LexendSemiBold';
-    src: url('../../../assets/LexendDeca-SemiBold.ttf');
-}
 #banner{
     max-width:100%;
     position:fixed;

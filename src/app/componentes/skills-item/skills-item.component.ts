@@ -8,6 +8,7 @@ import { Skill } from 'src/app/Skill';
 })
 export class SkillsItemComponent implements OnInit {
   @Input() skill!: Skill;
+
   constructor() { }
 
   ngOnInit(): void {

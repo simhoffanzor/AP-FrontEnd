@@ -1,5 +1,45 @@
 .item-skill {
-    background-color: #f4f4f4;
-    margin:2%;
-    padding: 10px 20px;
+    width:80%;
+    background: white;
+    padding:1%;
+    margin-bottom: 3%;
+    margin-left:5%;
+    border: dashed navy 1px;
+    
+}
+
+mat-spinner{
+    border-radius: 50%;
+    margin:auto;
+}
+h4{
+    margin-top: 3%;
+    margin-bottom: 7%;
+    font-family:'LexendSemiBold';
+    color:black;
+    text-align: center;
+}
+h5{
+    margin-top:3%;
+    font-family:'LexendThin';
+    font-weight: bolder;
+    color:black;
+}
+
+:host ::ng-deep  circle, .mat-spinner circle {   
+    stroke: black;
+}
+
+.col{
+    width:50%;
+    text-align: center;
+}
+
+.col-2{
+    width:50%;
+}
+.imagen-skill{
+    width:75%;
+    margin:auto;
+    display:block;
 }

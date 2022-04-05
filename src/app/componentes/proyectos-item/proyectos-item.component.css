@@ -6,6 +6,10 @@
     font-size:0.8rem;
 }
 
+.item-proyecto h5{
+    font-size:1.5rem;
+}
+
 .item-proyecto:hover{
     width:50%;
     font-size:1.1rem;

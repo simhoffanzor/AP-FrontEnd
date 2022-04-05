@@ -1,7 +1,25 @@
-<div 
-    class="item-skill"
-    >
-    <h5>{{skill.nombre}}</h5>
-    <p>{{skill.nivel}}
-    </p>
+<div class="item-skill">
+    <h4>{{skill.nombre}}</h4>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <mat-spinner      
+                    [mode]="'determinate'"
+                    [value]="skill.nivel"
+                    [diameter]="100"
+                ></mat-spinner>    
+                <h5>{{skill.nivel}}%</h5>
+            </div>
+            <div class="col-2">
+                <img 
+                    src="{{skill.url}}"
+                    alt="Logo de la skill"
+                    class="imagen-skill"/>
+            </div>
+        </div>
+    </div>
+
+
+    
 </div>
+

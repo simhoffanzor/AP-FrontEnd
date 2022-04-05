@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'LexendMedium';
+    src: url('assets/LexendDeca-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'LexendSemiBold';
+    src: url('assets/LexendDeca-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: 'LexendThin';
+    src: url('assets/LexendDeca-Thin.ttf');
+}
