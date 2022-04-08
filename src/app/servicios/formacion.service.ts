@@ -8,7 +8,7 @@ import { Formacion } from '../Formacion';
 })
 export class FormacionService {
 
-  private apiUrl = 'http://localhost:5001/estudios'
+  private apiUrl = 'http://localhost:5001/estudio'
   constructor(
     private http: HttpClient
   ) { }

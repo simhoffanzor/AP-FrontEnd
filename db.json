@@ -1,5 +1,5 @@
 {
-  "usuarios": [
+  "usuario": [
     {
       "id": 1,
       "nombre": "Sharon",
@@ -8,7 +8,7 @@
       "foto": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgFvZyBIq-a66l3OZawucQ8rNEKBpsoLyB5kDcBd0J2cYCnied4rDvPWZd9sNAY2AILng&usqp=CAU"
     }
   ],
-  "trabajos": [
+  "trabajo": [
     {
       "id": 1,
       "puesto": "Maquetado de Web Pages",
@@ -37,7 +37,7 @@
       "fotoLugar": "http://vjspain.com/wp-content/uploads/2015/10/processing3-logo.png"
     }
   ],
-  "estudios": [
+  "estudio": [
     {
       "id": 1,
       "titulo": "Full Stack Web Developer Jr.",
@@ -103,7 +103,7 @@
       "certificado":""
     }
   ],
-  "skills": [
+  "skill": [
     {
       "id": 1,
       "nombre": "PROCESSING",
@@ -153,7 +153,7 @@
       "url": "https://cdn-icons-png.flaticon.com/512/226/226777.png"
     }
   ],
-  "proyectos": [
+  "proyecto": [
     {
       "id": 1,
       "nombre": "Space Scape",

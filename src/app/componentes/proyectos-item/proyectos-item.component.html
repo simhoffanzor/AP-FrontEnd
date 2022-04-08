@@ -2,8 +2,9 @@
 
     <div class="card">
         <div class="card-body">
+            <i class="fa-solid fa-trash-can"></i>
             <h5 class="card-title">{{proyecto.nombre}}</h5>
-            <p class="card-text"><i>{{proyecto.fecha}}</i></p>
+            <p class="card-text" [style]="{'font-style': 'italic'}">{{proyecto.fecha}}</p>
             <p class="card-text">{{proyecto.descripcion}}</p>
             <a href="{{proyecto.url}}" target="_blank">
                 <img 

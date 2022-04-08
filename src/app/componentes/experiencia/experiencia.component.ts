@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { TrabajoService } from 'src/app/servicios/trabajo.service';
 import { Trabajo } from '../../Trabajo';
+
 @Component({
   selector: 'app-experiencia',
   templateUrl: './experiencia.component.html',
@@ -12,7 +13,9 @@ export class ExperienciaComponent implements OnInit {
 
   constructor(
     private trabajoService: TrabajoService
-  ) { }
+  ) { 
+    
+  }
 
   ngOnInit(): void {
     this.trabajoService.getTrabajos().subscribe((trabajos)=>(

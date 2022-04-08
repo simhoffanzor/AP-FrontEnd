@@ -8,7 +8,7 @@ import { Trabajo } from '../Trabajo';
 })
 export class TrabajoService {
 
-  private apiUrl = 'http://localhost:5001/trabajos'
+  private apiUrl = 'http://localhost:5001/trabajo'
   constructor(
     private http: HttpClient
   ) { }

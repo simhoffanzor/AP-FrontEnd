@@ -8,7 +8,7 @@ import { Skill } from '../Skill';
 })
 export class SkillService {
 
-  private apiUrl = 'http://localhost:5001/skills'
+  private apiUrl = 'http://localhost:5001/skill'
   constructor(
     private http: HttpClient
   ) { }

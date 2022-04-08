@@ -22,3 +22,9 @@
 .foto-proyecto{
     width:70%;
 }
+
+i{
+    cursor: pointer;
+    color:rgb(200, 0, 0);
+    margin-bottom:3%;
+}
