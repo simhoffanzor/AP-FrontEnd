@@ -20,4 +20,8 @@ export class ProyectosComponent implements OnInit {
       this.proyectos = proyectos
     ))
   }
+
+  toggleAgregarProy(){
+    alert("Estás agregando un proyecto");
+  }
 }

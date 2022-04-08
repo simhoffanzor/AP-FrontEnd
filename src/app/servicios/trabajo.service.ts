@@ -17,4 +17,5 @@ export class TrabajoService {
     
     return this.http.get<Trabajo[]>(this.apiUrl);
   }
+
 }

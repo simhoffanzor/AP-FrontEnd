@@ -23,4 +23,7 @@ export class ExperienciaComponent implements OnInit {
     ))
   }
 
+  toggleAgregarExp(){
+    alert("Estás agregando una experiencia");
+  }
 }

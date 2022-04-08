@@ -19,4 +19,8 @@ export class FormacionComponent implements OnInit {
     ))
   }
 
+  toggleAgregarForm(){
+    alert("Estoy agregando una formación");
+  }
+
 }

@@ -23,4 +23,8 @@ export class SkillsComponent implements OnInit {
     )
   }
 
+  toggleAgregarSkill(){
+    alert("Estás agregando una skill");
+  }
+
 }

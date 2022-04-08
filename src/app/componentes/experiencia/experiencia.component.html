@@ -2,6 +2,10 @@
     <div class="titulo">
         <h1>MI EXPERIEN<span>CIA</span>
         </h1>
+        <app-exp-button 
+            texto="Agregar experiencia"
+            (btnClick)="toggleAgregarExp()"
+        ></app-exp-button>
     </div>
     <div class="trabajos">
     <app-experiencia-item
