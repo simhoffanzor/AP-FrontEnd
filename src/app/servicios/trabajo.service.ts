@@ -18,4 +18,10 @@ export class TrabajoService {
     return this.http.get<Trabajo[]>(this.apiUrl);
   }
 
+  deleteTrabajo(trabajo:Trabajo):Observable<Trabajo>{
+    const url = `${this.apiUrl}/${trabajo.id}`
+    return this.http.delete<Trabajo>(url)
+  }
+
+
 }

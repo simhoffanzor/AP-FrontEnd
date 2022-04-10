@@ -10,11 +10,11 @@ import { Trabajo } from '../../Trabajo';
 export class ExperienciaComponent implements OnInit {
 
   trabajos: Trabajo[] = [];
+  show:boolean=false;
 
   constructor(
     private trabajoService: TrabajoService
   ) { 
-    
   }
 
   ngOnInit(): void {
@@ -24,6 +24,16 @@ export class ExperienciaComponent implements OnInit {
   }
 
   toggleAgregarExp(){
-    alert("Estás agregando una experiencia");
+    this.show= !this.show;
   }
+  
+  deleteTrabajo(trabajo: Trabajo){
+    this.trabajoService.deleteTrabajo(trabajo)
+    .subscribe(
+      ()=>(
+        this.trabajos = this.trabajos.filter( t => t.id !== trabajo.id)
+      )
+    );
+  }
+
 }

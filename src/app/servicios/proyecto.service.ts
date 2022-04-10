@@ -17,4 +17,9 @@ export class ProyectoService {
     
     return this.http.get<Proyecto[]>(this.apiUrl);
   }
+
+  deleteProyecto(proyecto:Proyecto):Observable<Proyecto>{
+    const url = `${this.apiUrl}/${proyecto.id}`
+    return this.http.delete<Proyecto>(url)
+  }
 }

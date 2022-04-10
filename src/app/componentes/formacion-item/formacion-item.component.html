@@ -5,22 +5,23 @@
         <div class="row">
             <div class="col-2">
                 <img 
-                    src="{{estudio.fotoEstudio}}"
+                    src="{{formacion.fotoEstudio}}"
                     alt="Logo de la institución"
                     class="foto-estudio"
                 />
             </div>
             <div class="col">
-                <h5>{{estudio.titulo}} || {{estudio.institucion}}</h5>
-                <p class="fechas">{{estudio.periodo}}</p>
+                <h5>{{formacion.titulo}} || {{formacion.institucion}}</h5>
+                <p class="fechas">{{formacion.periodo}}</p>
                 <a 
-                    *ngIf="estudio.certificado"
-                    href="{{estudio.certificado}}"
+                    *ngIf="formacion.certificado"
+                    href="{{formacion.certificado}}"
                     target="_blank"
                 >Certificado</a>
             </div>
             <div class="col-3">
-                <i class="fa-solid fa-trash-can"></i>
+                <i class="fa-solid fa-trash-can"
+                (click)="onClick()"></i>
             </div>
         </div>    
     </div>

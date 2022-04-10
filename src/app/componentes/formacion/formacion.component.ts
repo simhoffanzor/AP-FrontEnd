@@ -8,14 +8,14 @@ import { Formacion } from '../../Formacion';
 })
 export class FormacionComponent implements OnInit {
 
-  estudios: Formacion[] = [];
+  formaciones: Formacion[] = [];
   constructor(
     private formacionService: FormacionService
   ) { }
 
   ngOnInit(): void {
-    this.formacionService.getEstudios().subscribe((estudios)=>(
-      this.estudios = estudios
+    this.formacionService.getEstudios().subscribe((formaciones)=>(
+      this.formaciones = formaciones
     ))
   }
 
@@ -23,4 +23,12 @@ export class FormacionComponent implements OnInit {
     alert("Estoy agregando una formación");
   }
 
+  deleteFormacion(formacion: Formacion){
+    this.formacionService.deleteFormacion(formacion)
+    .subscribe(
+      ()=>(
+        this.formaciones = this.formaciones.filter( t => t.id !== formacion.id)
+      )
+    );
+  }
 }

@@ -8,10 +8,11 @@
         ></app-form-button>
     </div>
 
-    <div class="estudios">
+    <div class="formaciones">
         <app-formacion-item
-            *ngFor="let estudio of estudios"
-            [estudio] = "estudio"
+            *ngFor="let formacion of formaciones"
+            [formacion] = "formacion"
+            (onDeleteFormacion)="deleteFormacion(formacion)"
         ></app-formacion-item>
      
         </div>

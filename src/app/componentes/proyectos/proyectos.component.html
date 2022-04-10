@@ -10,6 +10,8 @@
 
     <app-proyectos-item
         *ngFor="let proyecto of proyectos"
-        [proyecto] = "proyecto">
+        [proyecto] = "proyecto"
+        (onDeleteProyecto)="deleteProyecto(proyecto)"
+        >
     </app-proyectos-item>
 </div>

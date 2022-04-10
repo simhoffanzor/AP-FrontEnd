@@ -17,4 +17,9 @@ export class FormacionService {
     
     return this.http.get<Formacion[]>(this.apiUrl);
   }
+
+  deleteFormacion(formacion:Formacion):Observable<Formacion>{
+    const url = `${this.apiUrl}/${formacion.id}`
+    return this.http.delete<Formacion>(url)
+  }
 }

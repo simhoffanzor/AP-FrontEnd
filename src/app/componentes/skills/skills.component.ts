@@ -27,4 +27,13 @@ export class SkillsComponent implements OnInit {
     alert("Estás agregando una skill");
   }
 
+  deleteSkill(skill:Skill){
+    this.skillService.deleteSkill(skill)
+    .subscribe(
+      ()=>(
+        this.skills = this.skills.filter( t => t.id !== skill.id)
+      )
+    );
+  }
+
 }

@@ -6,11 +6,17 @@
             texto="Agregar experiencia"
             (btnClick)="toggleAgregarExp()"
         ></app-exp-button>
+        <h6 [style]="{'text-align':'center'}"
+        *ngIf="show">
+            <br>
+            Esto sería un modal... Si supiera cómo hacer uno.
+        </h6>
     </div>
     <div class="trabajos">
     <app-experiencia-item
         *ngFor="let trabajo of trabajos"
         [trabajo] = "trabajo"
+        (onDeleteTrabajo)="deleteTrabajo(trabajo)"
     ></app-experiencia-item>
     </div>
 </div>

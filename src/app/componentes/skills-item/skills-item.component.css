@@ -48,4 +48,11 @@ i{
     cursor: pointer;
     color:rgb(200, 0, 0);
     font-size:1.2rem;
+    margin-bottom:3%;
+    margin-top:3%;
+}
+
+i:hover{
+    font-size:1.7rem;
+    margin-bottom:0.7%;
 }

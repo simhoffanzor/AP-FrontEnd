@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Formacion } from '../../Formacion';
 
 @Component({
@@ -7,12 +7,15 @@ import { Formacion } from '../../Formacion';
   styleUrls: ['./formacion-item.component.css']
 })
 export class FormacionItemComponent implements OnInit {
-  @Input() estudio!: Formacion;
+  @Input() formacion!: Formacion;
+  @Output() onDeleteFormacion = new EventEmitter();
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
-
+  onClick(){
+    this.onDeleteFormacion.emit();
+  }
 }

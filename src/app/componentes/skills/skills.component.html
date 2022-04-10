@@ -11,6 +11,7 @@
         <app-skills-item
         *ngFor="let skill of skills"
         [skill]="skill"
+        (onDeleteSkill)="deleteSkill(skill)"
     ></app-skills-item>
     </div>
    

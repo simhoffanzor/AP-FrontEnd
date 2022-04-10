@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Proyecto } from '../../Proyecto';
 
 @Component({
@@ -9,6 +9,7 @@ import { Proyecto } from '../../Proyecto';
 export class ProyectosItemComponent implements OnInit {
 
   @Input() proyecto!: Proyecto;
+  @Output() onDeleteProyecto = new EventEmitter();
 
   constructor() { }
 
@@ -16,6 +17,6 @@ export class ProyectosItemComponent implements OnInit {
   }
 
   onClick(){
-    
+    this.onDeleteProyecto.emit();
   }
 }

@@ -1,6 +1,5 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Trabajo } from '../../Trabajo';
-
 @Component({
   selector: 'app-experiencia-item',
   templateUrl: './experiencia-item.component.html',
@@ -8,10 +7,16 @@ import { Trabajo } from '../../Trabajo';
 })
 export class ExperienciaItemComponent implements OnInit {
   @Input() trabajo!: Trabajo;
+  @Output() onDeleteTrabajo=new EventEmitter();
 
-  constructor() { }
+  constructor(
+  ) { }
 
   ngOnInit(): void {
+  }
+
+  onClick(){
+    this.onDeleteTrabajo.emit();
   }
 
 }

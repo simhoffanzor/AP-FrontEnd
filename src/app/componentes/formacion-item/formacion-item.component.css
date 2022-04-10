@@ -38,3 +38,7 @@ i{
     color:rgb(200, 0, 0);
     font-size:1.2rem;
 }
+
+i:hover{
+    font-size:1.7rem;
+}
