@@ -1,7 +1,7 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { Subscription } from 'rxjs';
-import { Trabajo } from '../../Trabajo';
+import { Trabajo } from 'src/app/Trabajo';
 
 @Component({
   selector: 'app-modal-agregar-exp',
@@ -9,6 +9,7 @@ import { Trabajo } from '../../Trabajo';
   styleUrls: ['./modal-agregar-exp.component.css']
 })
 export class ModalAgregarExpComponent implements OnInit {
+
   @Output() onAddExp: EventEmitter<Trabajo> = new EventEmitter();
 
   puesto:string ="";
@@ -17,7 +18,6 @@ export class ModalAgregarExpComponent implements OnInit {
   fechaFinal:string="";
   descripcion:string="";
   fotoLugar:string="";
-
   subscription?: Subscription;
 
   constructor(

@@ -2,10 +2,9 @@
     <div class="titulo">
         <h1>MI FORMACI<span>ÓN</span>
         </h1>
-        <app-form-button
-            texto="Agregar formación"
-            (btnClick)="toggleAgregarForm()"
-        ></app-form-button>
+        <app-modal-agregar-for
+            (onAddForm)="addForm($event)"
+        ></app-modal-agregar-for>
     </div>
 
     <div class="formaciones">

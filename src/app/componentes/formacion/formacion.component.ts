@@ -9,6 +9,7 @@ import { Formacion } from '../../Formacion';
 export class FormacionComponent implements OnInit {
 
   formaciones: Formacion[] = [];
+
   constructor(
     private formacionService: FormacionService
   ) { }
@@ -19,10 +20,6 @@ export class FormacionComponent implements OnInit {
     ))
   }
 
-  toggleAgregarForm(){
-    alert("Estoy agregando una formación");
-  }
-
   deleteFormacion(formacion: Formacion){
     this.formacionService.deleteFormacion(formacion)
     .subscribe(
@@ -30,5 +27,11 @@ export class FormacionComponent implements OnInit {
         this.formaciones = this.formaciones.filter( t => t.id !== formacion.id)
       )
     );
+  }
+
+  addForm(formacion: Formacion){
+    this.formacionService.addForm(formacion).subscribe((formacion)=>(
+      this.formaciones.push(formacion)
+    ));
   }
 }

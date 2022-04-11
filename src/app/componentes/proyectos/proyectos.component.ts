@@ -21,10 +21,6 @@ export class ProyectosComponent implements OnInit {
     ))
   }
 
-  toggleAgregarProy(){
-    alert("Estás agregando un proyecto");
-  }
-
   deleteProyecto(proyecto: Proyecto){
     this.proyectoService.deleteProyecto(proyecto)
     .subscribe(
@@ -32,5 +28,11 @@ export class ProyectosComponent implements OnInit {
         this.proyectos = this.proyectos.filter( t => t.id !== proyecto.id)
       )
     );
+  }
+
+  addProy(proyecto: Proyecto){
+    this.proyectoService.addProy(proyecto).subscribe((proyecto)=>(
+      this.proyectos.push(proyecto)
+    ));
   }
 }

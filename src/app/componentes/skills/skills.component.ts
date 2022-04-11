@@ -23,10 +23,6 @@ export class SkillsComponent implements OnInit {
     )
   }
 
-  toggleAgregarSkill(){
-    alert("Estás agregando una skill");
-  }
-
   deleteSkill(skill:Skill){
     this.skillService.deleteSkill(skill)
     .subscribe(
@@ -34,6 +30,12 @@ export class SkillsComponent implements OnInit {
         this.skills = this.skills.filter( t => t.id !== skill.id)
       )
     );
+  }
+
+  addSkill(skill: Skill){
+    this.skillService.addSkill(skill).subscribe((skill)=>(
+      this.skills.push(skill)
+    ));
   }
 
 }

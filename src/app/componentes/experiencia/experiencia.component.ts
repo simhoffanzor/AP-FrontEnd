@@ -10,7 +10,6 @@ import { Trabajo } from '../../Trabajo';
 export class ExperienciaComponent implements OnInit {
 
   trabajos: Trabajo[] = [];
-  show:boolean=false;
 
   constructor(
     private trabajoService: TrabajoService

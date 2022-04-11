@@ -20,11 +20,11 @@ import { FormacionItemComponent } from './componentes/formacion-item/formacion-i
 import { SobreMiItemsComponent } from './componentes/sobre-mi-items/sobre-mi-items.component';
 import { ProyectosItemComponent } from './componentes/proyectos-item/proyectos-item.component';
 import { SkillsItemComponent } from './componentes/skills-item/skills-item.component';
-import { FormButtonComponent } from './componentes/formacion/form-button/form-button.component';
-import { ProyButtonComponent } from './componentes/proyectos/proy-button/proy-button.component';
-import { SkillButtonComponent } from './componentes/skills/skill-button/skill-button.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { ModalAgregarExpComponent } from './componentes/modal-agregar-exp/modal-agregar-exp.component';
+import { ModalAgregarExpComponent } from './componentes/modales/modal-agregar-exp/modal-agregar-exp.component';
+import { ModalAgregarForComponent } from './componentes/modales/modal-agregar-for/modal-agregar-for.component';
+import { ModalAgregarProyComponent } from './componentes/modales/modal-agregar-proy/modal-agregar-proy.component';
+import { ModalAgregarSkillComponent } from './componentes/modales/modal-agregar-skill/modal-agregar-skill.component';
 
 @NgModule({
   declarations: [
@@ -43,10 +43,10 @@ import { ModalAgregarExpComponent } from './componentes/modal-agregar-exp/modal-
     SobreMiItemsComponent,
     ProyectosItemComponent,
     SkillsItemComponent,
-    FormButtonComponent,
-    ProyButtonComponent,
-    SkillButtonComponent,
-    ModalAgregarExpComponent
+    ModalAgregarExpComponent,
+    ModalAgregarForComponent,
+    ModalAgregarProyComponent,
+    ModalAgregarSkillComponent
   ],
   imports: [
     BrowserModule,

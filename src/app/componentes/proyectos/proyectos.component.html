@@ -2,10 +2,9 @@
     <div class="titulo">
         <h1>PROYECTOS
         </h1>
-        <app-proy-button
-            texto="Agregar proyecto"
-            (btnClick)="toggleAgregarProy()"
-        ></app-proy-button>
+        <app-modal-agregar-proy
+            (onAddProy)="addProy($event)"
+        ></app-modal-agregar-proy>
     </div>
 
     <app-proyectos-item

@@ -2,10 +2,9 @@
     <div class="titulo">
         <h1>SKILLS
         </h1>
-        <app-skill-button
-            texto="Agregar skill"
-            (btnClick)="toggleAgregarSkill()"
-        ></app-skill-button>
+        <app-modal-agregar-skill
+            (onAddSkill)="addSkill($event)"
+        ></app-modal-agregar-skill>
     </div>
     <div class="wrapper">
         <app-skills-item
