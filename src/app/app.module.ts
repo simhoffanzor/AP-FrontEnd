@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -19,10 +20,11 @@ import { FormacionItemComponent } from './componentes/formacion-item/formacion-i
 import { SobreMiItemsComponent } from './componentes/sobre-mi-items/sobre-mi-items.component';
 import { ProyectosItemComponent } from './componentes/proyectos-item/proyectos-item.component';
 import { SkillsItemComponent } from './componentes/skills-item/skills-item.component';
-import { ExpButtonComponent } from './componentes/experiencia/exp-button/exp-button.component';
 import { FormButtonComponent } from './componentes/formacion/form-button/form-button.component';
 import { ProyButtonComponent } from './componentes/proyectos/proy-button/proy-button.component';
 import { SkillButtonComponent } from './componentes/skills/skill-button/skill-button.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { ModalAgregarExpComponent } from './componentes/modal-agregar-exp/modal-agregar-exp.component';
 
 @NgModule({
   declarations: [
@@ -41,16 +43,18 @@ import { SkillButtonComponent } from './componentes/skills/skill-button/skill-bu
     SobreMiItemsComponent,
     ProyectosItemComponent,
     SkillsItemComponent,
-    ExpButtonComponent,
     FormButtonComponent,
     ProyButtonComponent,
-    SkillButtonComponent
+    SkillButtonComponent,
+    ModalAgregarExpComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    MatProgressSpinnerModule
+    MatProgressSpinnerModule,
+    NgbModule,
+    FormsModule
   ],
   exports: [
     MatProgressSpinnerModule

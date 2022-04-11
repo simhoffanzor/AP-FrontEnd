@@ -3,6 +3,12 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable, of } from 'rxjs';
 import { Trabajo } from '../Trabajo';
 
+const httpOptions= {
+  headers: new HttpHeaders({
+    'Content-Type':'application/json'
+  })
+}
+
 @Injectable({
   providedIn: 'root'
 })
@@ -23,5 +29,8 @@ export class TrabajoService {
     return this.http.delete<Trabajo>(url)
   }
 
+  addExp(trabajo:Trabajo):Observable<Trabajo>{
+    return this.http.post<Trabajo>(this.apiUrl, trabajo, httpOptions)
+  }
 
 }

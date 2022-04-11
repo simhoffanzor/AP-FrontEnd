@@ -1,0 +1,96 @@
+<!-- BOTÓN PARA LANZAR EL MODAL-->
+<button 
+    type="button"
+    class="btn btn-light"
+    id="toggleAgregarExp"
+    (click)="modal.open(contenido)">
+    
+    Agregar experiencia
+
+</button>
+
+<!--MODAL-->
+<ng-template #contenido let-modal>
+    <div class="modal-header">
+        <h5 class="modal-title">Complete los campos</h5>
+        <i class="fa-solid fa-xmark"
+           (click)="modal.dismiss()"
+        ></i>
+    </div>
+    <div class="modal-body">
+
+
+    <form 
+        class="add-form" 
+        id="formul"
+        (ngSubmit)="onSubmit()"
+    >
+        <div class="form-control">
+            <label for="puesto">Puesto</label>
+            <input 
+                type="text" 
+                name="puesto" 
+                id="puesto" 
+                placeholder="Nombre del puesto"
+                [(ngModel)]="puesto"
+            />
+        </div>
+        <div class="form-control">
+            <label for="lugar">Lugar</label>
+            <input 
+                type="text" 
+                name="lugar" 
+                id="lugar" 
+                placeholder="Institución o ciudad" 
+                [(ngModel)]="lugar"
+            />
+        </div>
+        <div class="form-control">
+            <label for="fechaInicio">Fecha de inicio</label>
+            <input 
+                type="text" 
+                name="fechaInicio" 
+                id="fechaInicio" 
+                placeholder="Fecha de inicio en el puesto" 
+                [(ngModel)]="fechaInicio"
+            />
+        </div>
+        <div class="form-control">
+            <label for="fechaFinal">Fecha de final</label>
+            <input 
+                type="text" 
+                name="fechaFinal" 
+                id="fechaFinal" 
+                placeholder="Fecha de finalización (o si continúa)" 
+                [(ngModel)]="fechaFinal"
+            />
+        </div>
+        <div class="form-control">
+            <label for="descripcion">Descripcion</label>
+            <input 
+                type="text" 
+                name="descripcion" 
+                id="descripcion" 
+                placeholder="Descripción breve de las funciones" 
+                [(ngModel)]="descripcion"
+            />
+        </div>
+        <div class="form-control">
+            <label for="fotoLugar">Imagen</label>
+            <input 
+                type="text" 
+                name="fotoLugar" 
+                id="fotoLugar" 
+                placeholder="Logo de la institución o que represente el trabajo" 
+                [(ngModel)]="fotoLugar"
+            />
+        </div>
+        <div class="modal-footer">
+            <button
+                type="submit"
+                class="btn btn-primary"
+                (click)="modal.close()">Agregar</button>
+        </div>
+    </form>
+    </div>
+</ng-template>

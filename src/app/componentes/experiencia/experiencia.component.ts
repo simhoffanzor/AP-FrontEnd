@@ -22,10 +22,6 @@ export class ExperienciaComponent implements OnInit {
       this.trabajos = trabajos
     ))
   }
-
-  toggleAgregarExp(){
-    this.show= !this.show;
-  }
   
   deleteTrabajo(trabajo: Trabajo){
     this.trabajoService.deleteTrabajo(trabajo)
@@ -34,6 +30,12 @@ export class ExperienciaComponent implements OnInit {
         this.trabajos = this.trabajos.filter( t => t.id !== trabajo.id)
       )
     );
+  }
+
+  addExp(trabajo: Trabajo){
+    this.trabajoService.addExp(trabajo).subscribe((trabajo)=>(
+      this.trabajos.push(trabajo)
+    ));
   }
 
 }
