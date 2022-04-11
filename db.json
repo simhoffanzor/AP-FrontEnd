@@ -151,6 +151,12 @@
       "nombre": "JAVA",
       "nivel": 80,
       "url": "https://cdn-icons-png.flaticon.com/512/226/226777.png"
+    },
+    {
+      "nombre": "HTML",
+      "nivel": "5",
+      "url": "123",
+      "id": 10
     }
   ],
   "proyecto": [

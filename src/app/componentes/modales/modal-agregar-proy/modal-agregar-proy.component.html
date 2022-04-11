@@ -23,7 +23,8 @@
     <form 
         class="add-form" 
         id="formul"
-        (ngSubmit)="onSubmit()"
+        #formDetailUser="ngForm"
+        (ngSubmit)="onSubmit(formDetailUser)"
     >
         <div class="form-control">
             <label for="nombre">Nombre</label>
@@ -82,5 +83,7 @@
                 (click)="modal.close()">Guardar</button>
         </div>
     </form>
+
     </div>
 </ng-template>
+

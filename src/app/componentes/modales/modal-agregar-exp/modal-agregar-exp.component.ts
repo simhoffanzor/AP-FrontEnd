@@ -1,5 +1,6 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { NgForm } from '@angular/forms';
 import { Subscription } from 'rxjs';
 import { Trabajo } from 'src/app/Trabajo';
 
@@ -27,12 +28,12 @@ export class ModalAgregarExpComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  onSubmit(){
+  onSubmit(formDetailUser: NgForm){
     const {puesto, lugar, fechaInicio, fechaFinal, descripcion, fotoLugar} = this
     const newExp = {puesto,lugar,fechaInicio, fechaFinal, descripcion, fotoLugar}
     this.onAddExp.emit(newExp);
+    formDetailUser.reset();
   }
-
 
 
 }

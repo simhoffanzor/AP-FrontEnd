@@ -2,6 +2,7 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { Subscription } from 'rxjs';
 import { Proyecto } from 'src/app/Proyecto';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-modal-agregar-proy',
@@ -26,9 +27,10 @@ export class ModalAgregarProyComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  onSubmit(){
+  onSubmit(formDetailUser: NgForm) {
     const {nombre, fecha, descripcion, fotoProyecto, url} = this
     const newProy = {nombre, fecha, descripcion, fotoProyecto, url}
     this.onAddProy.emit(newProy);
+    formDetailUser.reset();
   }
 }

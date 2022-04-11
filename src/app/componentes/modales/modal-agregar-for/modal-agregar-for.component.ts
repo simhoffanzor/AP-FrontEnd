@@ -1,5 +1,6 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { NgForm } from '@angular/forms';
 import { Subscription } from 'rxjs';
 import { Formacion } from 'src/app/Formacion';
 
@@ -26,9 +27,10 @@ export class ModalAgregarForComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  onSubmit(){
+  onSubmit(formDetailUser: NgForm){
     const {titulo, institucion, periodo, fotoEstudio, certificado} = this
     const newForm = {titulo, institucion, periodo, fotoEstudio, certificado}
     this.onAddForm.emit(newForm);
+    formDetailUser.reset();
   }
 }
