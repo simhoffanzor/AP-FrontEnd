@@ -32,8 +32,9 @@ export class ProyectosComponent implements OnInit {
   }
 
   addProy(proyecto: Proyecto){
-    this.proyectoService.addProy(proyecto).subscribe((proyecto)=>(
-      this.proyectos.push(proyecto)
-    ));
+    this.proyectoService.addProy(proyecto).subscribe((proyecto)=>{
+      this.proyectos.push(proyecto);
+      console.log(proyecto);
+    });
   }
 }

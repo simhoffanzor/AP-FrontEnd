@@ -24,11 +24,11 @@ export class ProyectoService {
   }
 
   deleteProyecto(proyecto:Proyecto):Observable<Proyecto>{
-    const url = `${this.apiUrl}/${proyecto.id}`
+    const url = `${this.apiUrl}/eliminarProyecto/${proyecto.id}`
     return this.http.delete<Proyecto>(url)
   }
 
   addProy(proyecto:Proyecto):Observable<Proyecto>{
-    return this.http.post<Proyecto>(this.apiUrl, proyecto, httpOptions)
+    return this.http.post<Proyecto>(`${this.apiUrl}/newProyecto`, proyecto, httpOptions)
   }
 }

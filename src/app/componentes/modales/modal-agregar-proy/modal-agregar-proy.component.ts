@@ -31,6 +31,7 @@ export class ModalAgregarProyComponent implements OnInit {
     const {nombre, fecha, descripcion, fotoProyecto, url} = this
     const newProy = {nombre, fecha, descripcion, fotoProyecto, url}
     this.onAddProy.emit(newProy);
+    console.log(newProy);
     formDetailUser.reset();
   }
 }
