@@ -1,7 +1,7 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { Subscription } from 'rxjs';
-import { Proyecto } from 'src/app/Proyecto';
+import { Proyecto } from '../../../interfaces/Proyecto';
 import { NgForm } from '@angular/forms';
 
 @Component({

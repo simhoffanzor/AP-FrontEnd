@@ -1,5 +1,5 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
-import { Formacion } from '../../Formacion';
+import { Formacion } from '../../interfaces/Formacion';
 
 @Component({
   selector: 'app-formacion-item',

@@ -2,7 +2,7 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { NgForm } from '@angular/forms';
 import { Subscription } from 'rxjs';
-import { Trabajo } from 'src/app/Trabajo';
+import { Trabajo } from '../../../interfaces/Trabajo';
 
 @Component({
   selector: 'app-modal-agregar-exp',

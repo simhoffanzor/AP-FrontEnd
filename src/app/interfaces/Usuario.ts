@@ -4,4 +4,9 @@ export interface Usuario {
     apellido: string;
     descripcion:string;
     foto: string;
+    mail: string;
+    linkedin: string;
+    twitter: string;
+    telefono: string;
+    password: string;
 }

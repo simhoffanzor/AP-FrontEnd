@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable, of } from 'rxjs';
-import { Proyecto } from '../Proyecto';
+import { Proyecto } from '../interfaces/Proyecto';
 
 const httpOptions= {
   headers: new HttpHeaders({
@@ -13,14 +13,14 @@ const httpOptions= {
 })
 export class ProyectoService {
 
-  private apiUrl = 'http://localhost:5001/proyecto'
+  private apiUrl = 'http://localhost:8081'
   constructor(
     private http: HttpClient
   ) { }
 
   getProyectos(): Observable<Proyecto[]>{
     
-    return this.http.get<Proyecto[]>(this.apiUrl);
+    return this.http.get<Proyecto[]>(`${this.apiUrl}/verProyectos`);
   }
 
   deleteProyecto(proyecto:Proyecto):Observable<Proyecto>{

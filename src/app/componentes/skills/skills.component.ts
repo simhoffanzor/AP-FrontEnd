@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Skill } from '../../Skill'
+import { Skill } from '../../interfaces/Skill'
 import { SkillService } from 'src/app/servicios/skill.service';
 @Component({
   selector: 'app-skills',
@@ -16,11 +16,10 @@ export class SkillsComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this.skillService.getSkills().subscribe((skills)=>(
-      this.skills = skills
-    )
-      
-    )
+    this.skillService.getSkills().subscribe((skills)=>{
+      this.skills = skills;
+      console.log(skills);
+    })
   }
 
   deleteSkill(skill:Skill){

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { TrabajoService } from 'src/app/servicios/trabajo.service';
-import { Trabajo } from '../../Trabajo';
+import { Trabajo } from '../../interfaces/Trabajo';
 
 @Component({
   selector: 'app-experiencia',
@@ -17,9 +17,10 @@ export class ExperienciaComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.trabajoService.getTrabajos().subscribe((trabajos)=>(
-      this.trabajos = trabajos
-    ))
+    this.trabajoService.getTrabajos().subscribe((trabajos)=>{
+      this.trabajos = trabajos;
+      console.log(trabajos);
+    })
   }
   
   deleteTrabajo(trabajo: Trabajo){

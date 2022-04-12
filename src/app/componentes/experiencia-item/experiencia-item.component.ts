@@ -1,5 +1,5 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
-import { Trabajo } from '../../Trabajo';
+import { Trabajo } from '../../interfaces/Trabajo';
 @Component({
   selector: 'app-experiencia-item',
   templateUrl: './experiencia-item.component.html',

@@ -2,7 +2,7 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { NgForm } from '@angular/forms';
 import { Subscription } from 'rxjs';
-import { Skill } from 'src/app/Skill';
+import { Skill } from '../../../interfaces/Skill';
 @Component({
   selector: 'app-modal-agregar-skill',
   templateUrl: './modal-agregar-skill.component.html',

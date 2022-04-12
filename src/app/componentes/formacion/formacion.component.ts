@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormacionService } from 'src/app/servicios/formacion.service';
-import { Formacion } from '../../Formacion';
+import { Formacion } from '../../interfaces/Formacion';
 @Component({
   selector: 'app-formacion',
   templateUrl: './formacion.component.html',
@@ -15,9 +15,11 @@ export class FormacionComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this.formacionService.getEstudios().subscribe((formaciones)=>(
-      this.formaciones = formaciones
-    ))
+    this.formacionService.getEstudios().subscribe((formaciones)=>{
+      this.formaciones = formaciones;
+      console.log(formaciones);
+    }
+    )
   }
 
   deleteFormacion(formacion: Formacion){

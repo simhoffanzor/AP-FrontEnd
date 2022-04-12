@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Usuario } from 'src/app/Usuario';
+import { Usuario } from '../../interfaces/Usuario';
 
 @Component({
   selector: 'app-sobre-mi-items',

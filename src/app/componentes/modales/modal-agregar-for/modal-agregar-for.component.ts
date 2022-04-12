@@ -2,7 +2,7 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { NgForm } from '@angular/forms';
 import { Subscription } from 'rxjs';
-import { Formacion } from 'src/app/Formacion';
+import { Formacion } from '../../../interfaces/Formacion';
 
 @Component({
   selector: 'app-modal-agregar-for',

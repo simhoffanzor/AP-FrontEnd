@@ -1,5 +1,5 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
-import { Skill } from 'src/app/Skill';
+import { Skill } from '../../interfaces/Skill';
 
 @Component({
   selector: 'app-skills-item',
