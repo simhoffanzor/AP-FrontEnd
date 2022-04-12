@@ -15,7 +15,4 @@ export class HeaderComponent implements OnInit {
   
   }
 
-  toggleLogin(){
-    alert("Me clickeaste dentro del header");
-  }
 }

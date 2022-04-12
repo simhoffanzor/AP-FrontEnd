@@ -1,0 +1,32 @@
+<div class="wrapper fadeInDown">
+    <div id="formContent">
+ 
+      <div class="fadeIn first">
+        <i class="fa-solid fa-user"></i>
+      </div>
+  
+      <!-- Login Form -->
+      <form [formGroup]="loginForm" (ngSubmit)="onLogin(loginForm.value)">
+        <input 
+          type="text" 
+          id="login" 
+          class="fadeIn second" 
+          placeholder="Ingrese su email"
+          formControlName="usuario"  
+        >
+        <input 
+          type="text" 
+          id="password" 
+          class="fadeIn third" 
+          placeholder="Ingrese su contraseña"
+          formControlName="password"
+        >
+        <input 
+          type="submit" 
+          class="fadeIn fourth" 
+          value="Log In"
+        >
+      </form>
+  
+    </div>
+  </div>

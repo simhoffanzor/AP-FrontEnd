@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
-import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -25,6 +25,7 @@ import { ModalAgregarExpComponent } from './componentes/modales/modal-agregar-ex
 import { ModalAgregarForComponent } from './componentes/modales/modal-agregar-for/modal-agregar-for.component';
 import { ModalAgregarProyComponent } from './componentes/modales/modal-agregar-proy/modal-agregar-proy.component';
 import { ModalAgregarSkillComponent } from './componentes/modales/modal-agregar-skill/modal-agregar-skill.component';
+import { LoginComponent } from './componentes/header/login/login.component';
 
 @NgModule({
   declarations: [
@@ -46,7 +47,8 @@ import { ModalAgregarSkillComponent } from './componentes/modales/modal-agregar-
     ModalAgregarExpComponent,
     ModalAgregarForComponent,
     ModalAgregarProyComponent,
-    ModalAgregarSkillComponent
+    ModalAgregarSkillComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -54,6 +56,7 @@ import { ModalAgregarSkillComponent } from './componentes/modales/modal-agregar-
     HttpClientModule,
     MatProgressSpinnerModule,
     NgbModule,
+    ReactiveFormsModule,
     FormsModule
   ],
   exports: [
