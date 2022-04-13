@@ -1,4 +1,5 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { ProyectoService } from 'src/app/servicios/proyecto.service';
 import { Proyecto } from '../../interfaces/Proyecto';
 
 @Component({
@@ -11,7 +12,9 @@ export class ProyectosItemComponent implements OnInit {
   @Input() proyecto!: Proyecto;
   @Output() onDeleteProyecto = new EventEmitter();
 
-  constructor() { }
+  constructor(
+    private proyectoService: ProyectoService
+  ) { }
 
   ngOnInit(): void {
   }

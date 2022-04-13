@@ -22,19 +22,19 @@ export class ProyectosComponent implements OnInit {
     })
   }
 
-  deleteProyecto(proyecto: Proyecto){
+  addProy(proyecto: Proyecto){
+    this.proyectoService.addProy(proyecto).subscribe((proyecto)=>{
+      this.proyectos.push(proyecto);
+      console.log(proyecto);
+    });
+  }
+
+  deleteProyecto(proyecto:Proyecto){
     this.proyectoService.deleteProyecto(proyecto)
     .subscribe(
       ()=>(
         this.proyectos = this.proyectos.filter( t => t.id !== proyecto.id)
       )
     );
-  }
-
-  addProy(proyecto: Proyecto){
-    this.proyectoService.addProy(proyecto).subscribe((proyecto)=>{
-      this.proyectos.push(proyecto);
-      console.log(proyecto);
-    });
   }
 }
