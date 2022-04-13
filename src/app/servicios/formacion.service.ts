@@ -24,11 +24,11 @@ export class FormacionService {
   }
 
   deleteFormacion(formacion:Formacion):Observable<Formacion>{
-    const url = `${this.apiUrl}/${formacion.id}`
+    const url = `${this.apiUrl}/eliminarEstudio/${formacion.id}`
     return this.http.delete<Formacion>(url)
   }
 
   addForm(formacion:Formacion):Observable<Formacion>{
-    return this.http.post<Formacion>(this.apiUrl, formacion, httpOptions)
+    return this.http.post<Formacion>(`${this.apiUrl}/newEstudio`, formacion, httpOptions)
   }
 }

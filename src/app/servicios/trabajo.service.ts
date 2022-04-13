@@ -25,12 +25,12 @@ export class TrabajoService {
   }
 
   deleteTrabajo(trabajo:Trabajo):Observable<Trabajo>{
-    const url = `${this.apiUrl}/${trabajo.id}`
+    const url = `${this.apiUrl}/eliminarTrabajo/${trabajo.id}`
     return this.http.delete<Trabajo>(url)
   }
 
   addExp(trabajo:Trabajo):Observable<Trabajo>{
-    return this.http.post<Trabajo>(this.apiUrl, trabajo, httpOptions)
+    return this.http.post<Trabajo>(`${this.apiUrl}/newTrabajo`, trabajo, httpOptions)
   }
 
 }
