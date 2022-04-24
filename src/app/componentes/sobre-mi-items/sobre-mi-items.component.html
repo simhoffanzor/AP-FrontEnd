@@ -6,6 +6,7 @@
             <app-modal-editar-usu
                 [usuario]="this.usuario"
             ></app-modal-editar-usu>
+            <h3>{{usuario.nombre}} {{usuario.apellido}}</h3>
             <img 
                 src="{{usuario.foto}}" 
                 alt="Foto de Perfil"
@@ -13,7 +14,7 @@
             />
         </div>
         <div class="row-2">
-            <h4>Mi nombre es {{usuario.nombre}} {{usuario.apellido}}.</h4>
+            <h4>{{usuario.titulo}}</h4>
             <p>
             {{usuario.descripcion}}
             </p>

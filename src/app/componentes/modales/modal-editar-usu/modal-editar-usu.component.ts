@@ -23,6 +23,7 @@ export class ModalEditarUsuComponent implements OnInit {
   linkedin:string="";
   twitter:string="";
   telefono:string="";
+  mail:string="";
   password:string="";
   subscription?: Subscription;
 
@@ -46,9 +47,10 @@ export class ModalEditarUsuComponent implements OnInit {
     const linkedin = this.linkedin;
     const twitter = this.twitter;
     const telefono = this.telefono;
+    const mail = this.mail;
     const password = this.password;
     const usuEdited = { id, nombre, apellido, descripcion, titulo, foto, github, 
-                        linkedin, twitter, telefono, password };
+                        linkedin, twitter, telefono, mail, password };
 
     /*Llamo al usuarioService y le pido que ejecute la función de editUsu*/
     this.usuarioService.editUsu(usuEdited).subscribe((response)=>(

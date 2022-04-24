@@ -6,15 +6,11 @@
 }
 .titulo h1{
     font-family: 'LexendMedium';
-    text-align: center;
     font-size:3.5rem;
     color:#21252a;
     letter-spacing: 1.7rem;
 }
 
-.titulo span{
-    color:white;
-}
 .formaciones {
     margin-top:3%;
 }

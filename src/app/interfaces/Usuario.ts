@@ -9,5 +9,6 @@ export interface Usuario {
     linkedin: string;
     twitter: string;
     telefono: string;
+    mail: string;
     password: string;
 }
