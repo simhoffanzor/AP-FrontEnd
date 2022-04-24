@@ -17,11 +17,20 @@
                 <p>{{trabajo.descripcion}}</p>
             </div>
             <div class="col-3">
-                <!--ELIMINAR EXPERIENCIA-->
-                <div class="container">
-                    <i class="fa-solid fa-trash-can"
-                    (click)="onClick()"></i>
-                </div>
+                <!-- BOTÓN PARA ELIMINAR-->
+                <button 
+                    type="button"
+                    class="btn btn-light"
+                    id="toggleAgregarExp"
+                    (click)="onClick()">
+                    <i class="fa-solid fa-trash-can"></i>
+                </button>
+            </div>
+            <div class="col-4">
+                <!--EDITAR EXPERIENCIA-->
+                <app-modal-editar-exp
+                [trabajo]="this.trabajo"
+                ></app-modal-editar-exp>
             </div>
         </div>    
     </div>

@@ -31,4 +31,9 @@ export class ProyectoService {
   addProy(proyecto:Proyecto):Observable<Proyecto>{
     return this.http.post<Proyecto>(`${this.apiUrl}/newProyecto`, proyecto, httpOptions)
   }
+
+  editProy(proyecto:Proyecto):Observable<Proyecto>{
+    return this.http.put<Proyecto>(
+      `${this.apiUrl}/editarProyecto/${proyecto.id}`, proyecto, httpOptions)
+  }
 }

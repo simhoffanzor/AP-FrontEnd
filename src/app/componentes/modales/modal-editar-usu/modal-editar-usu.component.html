@@ -1,0 +1,137 @@
+<!-- BOTÓN PARA LANZAR EL MODAL-->
+<button 
+    type="button"
+    class="btn btn-light"
+    id="toggleEditarUsuario"
+    (click)="modal.open(contenido)">
+    
+    <i class="fa-solid fa-pencil"></i>
+
+</button>
+
+<!--MODAL-->
+<ng-template #contenido let-modal>
+    <div class="modal-header">
+        <h5 class="modal-title">Edición de usuario</h5>
+        <i class="fa-solid fa-xmark"
+           (click)="modal.dismiss()"
+        ></i>
+    </div>
+    <div class="modal-body">
+
+
+    <form 
+        class="add-form" 
+        id="formul"
+        #formDetailUser="ngForm"
+        (ngSubmit)="onSubmit(formDetailUser)"
+    >
+    <!--ESTA FILA TIENE LOS DATOS-->
+    <div class="row" id="datos">
+        <h6>Datos personales</h6>
+        <div class="form-control">
+            <label for="nombre">Nombre</label>
+            <input 
+                type="text" 
+                name="nombre" 
+                id="nombre" 
+                placeholder="Ingrese su nombre"
+                [(ngModel)]="nombre"
+            />
+        </div>
+        <div class="form-control">
+            <label for="apellido">Apellido</label>
+            <input 
+                type="text" 
+                name="apellido" 
+                id="apellido" 
+                placeholder="Ingrese su apellido" 
+                [(ngModel)]="apellido"
+            />
+        </div>
+        <div class="form-control">
+            <label for="titulo">Título</label>
+            <input 
+                type="text" 
+                name="titulo" 
+                id="titulo" 
+                placeholder="Ingrese su título" 
+                [(ngModel)]="titulo"
+            />
+        </div>
+        <div class="form-control">
+            <label for="descripcion">Descripción</label>
+            <input 
+                type="text" 
+                name="descripcion" 
+                id="descripcion" 
+                placeholder="Ingrese una breve descripción" 
+                [(ngModel)]="descripcion"
+            />
+        </div>
+        <div class="form-control">
+            <label for="foto">Foto</label>
+            <input
+                type="text"
+                name="foto"
+                id="foto"
+                placeholder="Ingrese su foto de perfil"
+                [(ngModel)]="foto"
+            />
+        </div>
+        <h6>Datos de contacto</h6>
+        <div class="form-control">
+            <label for="github">Github</label>
+            <input
+                type="text"
+                name="github"
+                id="github"
+                placeholder="Ingrese su perfil de Github"
+                [(ngModel)]="github"
+            />
+        </div>
+        <div class="form-control">
+            <label for="linkedin">Linkedin</label>
+            <input
+                type="text"
+                name="linkedin"
+                id="linkedin"
+                placeholder="Ingrese su perfil de Linkedin"
+                [(ngModel)]="linkedin"
+            />
+        </div>
+        <div class="form-control">
+            <label for="twitter">Twitter</label>
+            <input
+                type="text"
+                name="twitter"
+                id="twitter"
+                placeholder="Ingrese su perfil de Twitter"
+                [(ngModel)]="twitter"
+            />
+        </div>
+        <div class="form-control">
+            <label for="telefono">Telefono</label>
+            <input
+                type="text"
+                name="telefono"
+                id="telefono"
+                placeholder="Ingrese su teléfono de contacto"
+                [(ngModel)]="telefono"
+            />
+        </div>
+    </div>
+    <!--ESTA FILA TIENE LOS DATOS PARA INICIAR SESIÓN-->
+    <div class="row-2" id="inicioSesion">
+
+    </div>
+        
+        <div class="modal-footer">
+            <button
+                type="submit"
+                class="btn btn-primary"
+                (click)="modal.close()">Guardar</button>
+        </div>
+    </form>
+    </div>
+</ng-template>

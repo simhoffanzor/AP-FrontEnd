@@ -1,0 +1,97 @@
+<!-- BOTÓN PARA LANZAR EL MODAL-->
+<button 
+    type="button"
+    class="btn btn-light"
+    id="toggleEditarExp"
+    (click)="modal.open(contenido)">
+    
+    <i class="fa-solid fa-pencil"></i>
+
+</button>
+
+<!--MODAL-->
+<ng-template #contenido let-modal>
+    <div class="modal-header">
+        <h5 class="modal-title">Complete los campos</h5>
+        <i class="fa-solid fa-xmark"
+           (click)="modal.dismiss()"
+        ></i>
+    </div>
+    <div class="modal-body">
+
+
+    <form 
+        class="add-form" 
+        id="formul"
+        #formDetailUser="ngForm"
+        (ngSubmit)="onSubmit(formDetailUser)"
+    >
+        <div class="form-control">
+            <label for="puesto">Puesto</label>
+            <input 
+                type="text" 
+                name="puesto" 
+                id="puesto"
+                placeholder="{{trabajo.puesto}}" 
+                [(ngModel)]="puesto"
+            />
+        </div>
+        <div class="form-control">
+            <label for="lugar">Lugar</label>
+            <input 
+                type="text" 
+                name="lugar" 
+                id="lugar" 
+                placeholder="{{trabajo.lugar}}" 
+                [(ngModel)]="lugar"
+            />
+        </div>
+        <div class="form-control">
+            <label for="fechaInicio">Fecha de inicio</label>
+            <input 
+                type="text" 
+                name="fechaInicio" 
+                id="fechaInicio" 
+                placeholder="{{trabajo.fechaInicio}}" 
+                [(ngModel)]="fechaInicio"
+            />
+        </div>
+        <div class="form-control">
+            <label for="fechaFinal">Fecha de final</label>
+            <input 
+                type="text" 
+                name="fechaFinal" 
+                id="fechaFinal" 
+                placeholder="{{trabajo.fechaFinal}}" 
+                [(ngModel)]="fechaFinal"
+            />
+        </div>
+        <div class="form-control">
+            <label for="descripcion">Descripcion</label>
+            <input 
+                type="text" 
+                name="descripcion" 
+                id="descripcion" 
+                placeholder="Agregue la nueva descripción del trabajo" 
+                [(ngModel)]="descripcion"
+            />
+        </div>
+        <div class="form-control">
+            <label for="fotoLugar">Imagen</label>
+            <input 
+                type="text" 
+                name="fotoLugar" 
+                id="fotoLugar" 
+                placeholder="Logo de la institución o que represente el trabajo" 
+                [(ngModel)]="fotoLugar"
+            />
+        </div>
+        <div class="modal-footer">
+            <button
+                type="submit"
+                class="btn btn-primary"
+                (click)="modal.close()">Guardar</button>
+        </div>
+    </form>
+    </div>
+</ng-template>

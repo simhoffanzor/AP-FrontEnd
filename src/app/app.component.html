@@ -1,5 +1,8 @@
 <div class="componentes">
-  <app-header></app-header>
+  <app-header
+    *ngFor="let usuario of usuarios"
+    [usuario] = "usuario">
+  </app-header>
   <router-outlet></router-outlet>
   <app-footer></app-footer>
 </div>

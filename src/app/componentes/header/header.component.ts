@@ -1,5 +1,5 @@
-import { Component, OnInit} from '@angular/core';
-
+import { Component, OnInit, Input} from '@angular/core';
+import { Usuario } from 'src/app/interfaces/Usuario';
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -7,11 +7,12 @@ import { Component, OnInit} from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
+  @Input() usuario!: Usuario;
+
   constructor(
   ) { }
 
   ngOnInit(): void {
   }
-
 
 }

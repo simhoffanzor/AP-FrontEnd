@@ -37,5 +37,5 @@ export class ExperienciaComponent implements OnInit {
       this.trabajos.push(trabajo)
     ));
   }
-
+  
 }

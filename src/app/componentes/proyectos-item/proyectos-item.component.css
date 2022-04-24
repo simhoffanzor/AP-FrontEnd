@@ -10,6 +10,17 @@
     font-size:1.5rem;
 }
 
+.col{
+    width:50%;
+    margin:auto;
+    margin-bottom:3%;
+}
+
+.col-2{
+    width:50%;
+    margin:auto;
+    margin-bottom:3%;
+}
 .card-body{
     text-align: center;
 }
@@ -22,16 +33,15 @@
     width:100%;
 }
 
-
-
-i{
-    cursor: pointer;
-    color:rgb(200, 0, 0);
-    margin-bottom:3%;
-    font-size:1.2rem;
+button{
+    display:flex;
+    margin:auto;
+    margin-top: 2%;
+    border-color:black;
 }
 
-i:hover{
-    font-size:1.7rem;
-    margin-bottom:1.5%;
+button:hover{
+    background-color: black;
+    color:white;
+    border-color: grey;
 }

@@ -1,0 +1,67 @@
+<!-- BOTÓN PARA LANZAR EL MODAL-->
+<button 
+    type="button"
+    class="btn btn-light"
+    id="toggleEditarSkill"
+    (click)="modal.open(contenido)">
+    
+    <i class="fa-solid fa-pencil"></i>
+
+</button>
+
+<!--MODAL-->
+<ng-template #contenido let-modal>
+    <div class="modal-header">
+        <h5 class="modal-title">Complete los campos</h5>
+        <i class="fa-solid fa-xmark"
+           (click)="modal.dismiss()"
+        ></i>
+    </div>
+    <div class="modal-body">
+
+
+    <form 
+        class="add-form" 
+        id="formul"
+        #formDetailUser="ngForm"
+        (ngSubmit)="onSubmit(formDetailUser)"
+    >
+        <div class="form-control">
+            <label for="nombre">Nombre</label>
+            <input 
+                type="text" 
+                name="nombre" 
+                id="nombre" 
+                placeholder="Nombre de la habilidad"
+                [(ngModel)]="nombre"
+            />
+        </div>
+        <div class="form-control">
+            <label for="nivel">Nivel</label>
+            <input 
+                type="text" 
+                name="nivel" 
+                id="nivel" 
+                placeholder="Nivel del desempeño (del 1 al 100)" 
+                [(ngModel)]="nivel"
+            />
+        </div>
+        <div class="form-control">
+            <label for="url">Imagen</label>
+            <input 
+                type="text" 
+                name="url" 
+                id="url" 
+                placeholder="Imagen distintiva de la habilidad" 
+                [(ngModel)]="url"
+            />
+        </div>
+        <div class="modal-footer">
+            <button
+                type="submit"
+                class="btn btn-primary"
+                (click)="modal.close()">Guardar</button>
+        </div>
+    </form>
+    </div>
+</ng-template>

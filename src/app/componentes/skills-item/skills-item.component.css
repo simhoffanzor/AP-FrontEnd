@@ -8,6 +8,20 @@
     
 }
 
+.col {
+    width:50%;
+    margin:auto;
+    margin-bottom:2%;
+    margin-top:3%;
+}
+
+.col-2 {
+    width:50%;
+    margin:auto;
+    margin-bottom:2%;
+    margin-top:3%;
+}
+
 mat-spinner{
     border-radius: 50%;
     margin:auto;
@@ -44,15 +58,15 @@ h5{
     display:block;
 }
 
-i{
-    cursor: pointer;
-    color:rgb(200, 0, 0);
-    font-size:1.2rem;
-    margin-bottom:3%;
-    margin-top:3%;
+button{
+    display:flex;
+    margin:auto;
+    margin-top: 2%;
+    border-color:black;
 }
 
-i:hover{
-    font-size:1.7rem;
-    margin-bottom:0.7%;
+button:hover{
+    background-color: black;
+    color:white;
+    border-color: grey;
 }

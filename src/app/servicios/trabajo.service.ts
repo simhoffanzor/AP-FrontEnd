@@ -33,4 +33,8 @@ export class TrabajoService {
     return this.http.post<Trabajo>(`${this.apiUrl}/newTrabajo`, trabajo, httpOptions)
   }
 
+  editExp(trabajo:Trabajo):Observable<Trabajo>{
+    return this.http.put<Trabajo>(
+      `${this.apiUrl}/editarTrabajo/${trabajo.id}`, trabajo, httpOptions)
+  }
 }

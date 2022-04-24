@@ -31,4 +31,9 @@ export class FormacionService {
   addForm(formacion:Formacion):Observable<Formacion>{
     return this.http.post<Formacion>(`${this.apiUrl}/newEstudio`, formacion, httpOptions)
   }
+
+  editFor(formacion:Formacion):Observable<Formacion>{
+    return this.http.put<Formacion>(
+      `${this.apiUrl}/editarEstudio/${formacion.id}`, formacion, httpOptions)
+  }
 }

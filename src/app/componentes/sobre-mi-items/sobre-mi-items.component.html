@@ -3,20 +3,20 @@
     >
     <div class="container-fluid">
         <div class="row">
-            <div class="col-2">
-                <img 
-                    src="{{usuario.foto}}" 
-                    alt="Foto de Perfil"
-                    class="fotoPerfil"
-                />
-            </div>
-            <div class="col">
-                <h4>Mi nombre es {{usuario.nombre}} {{usuario.apellido}}.</h4>
-                <p>
-                {{usuario.descripcion}}
-                </p>
-            </div>
+            <app-modal-editar-usu
+                [usuario]="this.usuario"
+            ></app-modal-editar-usu>
+            <img 
+                src="{{usuario.foto}}" 
+                alt="Foto de Perfil"
+                class="fotoPerfil"
+            />
+        </div>
+        <div class="row-2">
+            <h4>Mi nombre es {{usuario.nombre}} {{usuario.apellido}}.</h4>
+            <p>
+            {{usuario.descripcion}}
+            </p>
         </div>
     </div>
-
 </div>

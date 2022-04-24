@@ -1,9 +1,22 @@
 <div class="item-skill">
     <h4>{{skill.nombre}} 
         <br>
-        <i class="fa-solid fa-trash-can"
-            (click)="onClick()"
-        ></i> 
+        <div class="row">
+            <div class="col">
+                <app-modal-editar-skill
+                    [skill]="this.skill"
+                    ></app-modal-editar-skill>
+            </div>
+            <div class="col-2">
+                <button 
+                type="button"
+                class="btn btn-light"
+                id="toggleEliminarSkill"
+                (click)="onClick()">
+                <i class="fa-solid fa-trash-can"></i>
+            </button>
+            </div>
+        </div>
     </h4>
     <div class="container-fluid">
         <div class="row">

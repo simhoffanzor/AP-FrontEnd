@@ -26,6 +26,11 @@ import { ModalAgregarForComponent } from './componentes/modales/modal-agregar-fo
 import { ModalAgregarProyComponent } from './componentes/modales/modal-agregar-proy/modal-agregar-proy.component';
 import { ModalAgregarSkillComponent } from './componentes/modales/modal-agregar-skill/modal-agregar-skill.component';
 import { LoginComponent } from './componentes/header/login/login.component';
+import { ModalEditarExpComponent } from './componentes/modales/modal-editar-exp/modal-editar-exp.component';
+import { ModalEditarForComponent } from './componentes/modales/modal-editar-for/modal-editar-for.component';
+import { ModalEditarProyComponent } from './componentes/modales/modal-editar-proy/modal-editar-proy.component';
+import { ModalEditarSkillComponent } from './componentes/modales/modal-editar-skill/modal-editar-skill.component';
+import { ModalEditarUsuComponent } from './componentes/modales/modal-editar-usu/modal-editar-usu.component';
 
 @NgModule({
   declarations: [
@@ -48,7 +53,12 @@ import { LoginComponent } from './componentes/header/login/login.component';
     ModalAgregarForComponent,
     ModalAgregarProyComponent,
     ModalAgregarSkillComponent,
-    LoginComponent
+    LoginComponent,
+    ModalEditarExpComponent,
+    ModalEditarForComponent,
+    ModalEditarProyComponent,
+    ModalEditarSkillComponent,
+    ModalEditarUsuComponent
   ],
   imports: [
     BrowserModule,

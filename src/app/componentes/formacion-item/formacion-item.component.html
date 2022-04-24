@@ -20,8 +20,20 @@
                 >Certificado</a>
             </div>
             <div class="col-3">
-                <i class="fa-solid fa-trash-can"
-                (click)="onClick()"></i>
+                <!-- BOTÓN PARA ELIMINAR-->
+                <button 
+                    type="button"
+                    class="btn btn-light"
+                    id="toggleAgregarFor"
+                    (click)="onClick()">
+                    <i class="fa-solid fa-trash-can"></i>
+                </button>
+            </div>
+            <div class="col-4">
+                <!--EDITAR EXPERIENCIA-->
+                <app-modal-editar-for
+                [formacion]="this.formacion"
+                ></app-modal-editar-for>
             </div>
         </div>    
     </div>

@@ -3,8 +3,9 @@ export interface Usuario {
     nombre: string;
     apellido: string;
     descripcion:string;
+    titulo: string;
     foto: string;
-    mail: string;
+    github: string;
     linkedin: string;
     twitter: string;
     telefono: string;

@@ -2,8 +2,23 @@
 
     <div class="card">
         <div class="card-body">
-            <i class="fa-solid fa-trash-can"
-            (click)="onClick()"></i>
+            <div class="row">
+                <div class="col">
+                    <button 
+                        type="button"
+                        class="btn btn-light"
+                        id="toggleEliminarProy∫"
+                        (click)="onClick()">
+                        <i class="fa-solid fa-trash-can"></i>
+                    </button>
+                </div>
+                <div class="col-2">
+                    <app-modal-editar-proy
+                    [proyecto]="this.proyecto"
+                    ></app-modal-editar-proy>
+                </div>
+            </div>
+            
             <h5 class="card-title">{{proyecto.nombre}}</h5>
             <p class="card-text" [style]="{'font-style': 'italic'}">{{proyecto.fecha}}</p>
             <p class="card-text">{{proyecto.descripcion}}</p>
