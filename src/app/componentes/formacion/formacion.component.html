@@ -2,6 +2,7 @@
     <div class="titulo">
         <h1>MI FORMACIÓN</h1>
         <app-modal-agregar-for
+            *ngIf="this.logueado"
             (onAddForm)="addForm($event)"
         ></app-modal-agregar-for>
     </div>

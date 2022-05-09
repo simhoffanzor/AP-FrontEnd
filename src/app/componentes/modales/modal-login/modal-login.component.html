@@ -1,11 +1,23 @@
-<!-- BOTÓN PARA LANZAR EL MODAL-->
+<!--BOTÓN PARA CERRAR SESIÓN-->
+<button
+    *ngIf="inicio"
+    type="button"
+    class="btn btn-light"
+    id="toggleLogin"
+    (click)="cerrarSesion()"
+>
+    Cerrar sesión
+</button>
+
+<!-- BOTÓN PARA INICIAR SESIÓN-->
 <button 
+    *ngIf="this.inicio === false"
     type="button"
     class="btn btn-light"
     id="toggleLogin"
     (click)="modal.open(contenido)">
-    
-    {{text}}
+
+    Iniciar sesión
 
 </button>
 

@@ -3,6 +3,7 @@
         <h1>SKILLS
         </h1>
         <app-modal-agregar-skill
+            *ngIf="this.logueado"
             (onAddSkill)="addSkill($event)"
         ></app-modal-agregar-skill>
     </div>

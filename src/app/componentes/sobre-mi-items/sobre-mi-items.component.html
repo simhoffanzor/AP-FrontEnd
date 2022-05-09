@@ -4,6 +4,7 @@
     <div class="container-fluid">
         <div class="row">
             <app-modal-editar-usu
+                *ngIf="this.logueado"
                 [usuario]="this.usuario"
             ></app-modal-editar-usu>
             <h3>{{usuario.nombre}} {{usuario.apellido}}</h3>

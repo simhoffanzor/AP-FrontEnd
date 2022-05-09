@@ -2,22 +2,26 @@
     <h4>{{skill.nombre}} 
         <br>
         <div class="row">
+            <!--BOTON EDITAR-->
             <div class="col">
                 <app-modal-editar-skill
+                    *ngIf="this.logueado"
                     [skill]="this.skill"
                     ></app-modal-editar-skill>
             </div>
             <div class="col-2">
+                <!--BOTON DE ELIMINAR-->
                 <button 
-                type="button"
-                class="btn btn-light"
-                id="toggleEliminarSkill"
-                (click)="onClick()">
-                <i class="fa-solid fa-trash-can"></i>
-            </button>
+                    *ngIf="this.logueado"
+                    type="button"
+                    class="btn btn-light"
+                    id="toggleEliminarSkill"
+                    (click)="onClick()">
+                    <i class="fa-solid fa-trash-can"></i>
+                </button>
+                </div>
             </div>
-        </div>
-    </h4>
+        </h4>
     <div class="container-fluid">
         <div class="row">
             <div class="col">

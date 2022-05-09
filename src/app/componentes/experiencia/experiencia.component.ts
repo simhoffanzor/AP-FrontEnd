@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { TrabajoService } from 'src/app/servicios/trabajo.service';
 import { Trabajo } from '../../interfaces/Trabajo';
-
+import { UiService } from 'src/app/servicios/ui.service';
 @Component({
   selector: 'app-experiencia',
   templateUrl: './experiencia.component.html',
@@ -10,9 +10,11 @@ import { Trabajo } from '../../interfaces/Trabajo';
 export class ExperienciaComponent implements OnInit {
 
   trabajos: Trabajo[] = [];
+  logueado!: boolean;
 
   constructor(
-    private trabajoService: TrabajoService
+    private trabajoService: TrabajoService,
+    private uiService : UiService
   ) { 
   }
 
@@ -20,7 +22,9 @@ export class ExperienciaComponent implements OnInit {
     this.trabajoService.getTrabajos().subscribe((trabajos)=>{
       this.trabajos = trabajos;
       console.log(trabajos);
-    })
+    });
+    console.log("El estado es " +this.uiService.estadoBool());
+    this.logueado = this.uiService.estadoBool();
   }
   
   deleteTrabajo(trabajo: Trabajo){

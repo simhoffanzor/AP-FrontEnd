@@ -3,7 +3,7 @@ import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { NgForm } from '@angular/forms';
 import { Subscription } from 'rxjs';
 import { Usuario } from 'src/app/interfaces/Usuario';
-
+import { UiService } from 'src/app/servicios/ui.service';
 @Component({
   selector: 'app-modal-login',
   templateUrl: './modal-login.component.html',
@@ -15,11 +15,13 @@ export class ModalLoginComponent implements OnInit {
 
   user:string="";
   password:string="";
-  text:string="Login";
+  text:string="Iniciar sesión";
+  inicio: boolean = false;
   subscription?: Subscription;
 
   constructor(
-    public modal:NgbModal
+    public modal:NgbModal,
+    private uiService : UiService
   ) { }
 
   ngOnInit(): void {
@@ -33,8 +35,19 @@ export class ModalLoginComponent implements OnInit {
 
     if (user === this.usuario.mail && 
       password === this.usuario.password){
-      console.log("EXITO");
+      this.uiService.toggleEdit();
+      this.inicio = this.uiService.estadoBool();
+      console.log("Sera posible ESTO: "+this.uiService.estadoBool());
     }
+    else {
+      alert("Usuario o contraseña incorrectos.")
+    }
+  }
+
+  cerrarSesion(){
+    this.uiService.toggleEdit();
+    this.inicio = this.uiService.estadoBool();
+    console.log("Sera posible ESTO: "+this.uiService.estadoBool());
   }
 
 }

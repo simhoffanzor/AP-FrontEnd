@@ -19,6 +19,7 @@
             <div class="col-3">
                 <!-- BOTÓN PARA ELIMINAR-->
                 <button 
+                    *ngIf="this.logueado"
                     type="button"
                     class="btn btn-light"
                     id="toggleAgregarExp"
@@ -29,6 +30,7 @@
             <div class="col-4">
                 <!--EDITAR EXPERIENCIA-->
                 <app-modal-editar-exp
+                *ngIf="this.logueado"
                 [trabajo]="this.trabajo"
                 ></app-modal-editar-exp>
             </div>

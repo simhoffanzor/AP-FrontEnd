@@ -3,6 +3,7 @@
         <h1>PROYECTOS
         </h1>
         <app-modal-agregar-proy
+            *ngIf="this.logueado"
             (onAddProy)="addProy($event)"
         ></app-modal-agregar-proy>
     </div>

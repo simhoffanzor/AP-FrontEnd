@@ -14,9 +14,10 @@ export class UiService {
   toggleEdit():void{
     this.showEdit = !this.showEdit;
     this.subject.next(this.showEdit);
+    console.log("El servicio dice que esto es " +this.showEdit);
   }
 
-  onToggle():Observable<any>{
-    return this.subject.asObservable();
+  estadoBool():boolean{
+    return this.showEdit;
   }
 }

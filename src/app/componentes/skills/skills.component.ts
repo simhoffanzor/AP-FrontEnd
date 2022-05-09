@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Skill } from '../../interfaces/Skill'
 import { SkillService } from 'src/app/servicios/skill.service';
+import { UiService } from 'src/app/servicios/ui.service';
 @Component({
   selector: 'app-skills',
   templateUrl: './skills.component.html',
@@ -10,9 +11,11 @@ import { SkillService } from 'src/app/servicios/skill.service';
 export class SkillsComponent implements OnInit {
 
   skills : Skill[] = [];
+  logueado!:boolean;
 
   constructor(
-    private skillService : SkillService
+    private skillService : SkillService,
+    private uiService : UiService
   ) { }
 
   ngOnInit(): void {
@@ -20,6 +23,8 @@ export class SkillsComponent implements OnInit {
       this.skills = skills;
       console.log(skills);
     })
+    console.log("El estado es " +this.uiService.estadoBool());
+    this.logueado = this.uiService.estadoBool();
   }
 
   deleteSkill(skill:Skill){
