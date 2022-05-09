@@ -40,10 +40,10 @@
             <a
                 class="nav-link" 
                 routerLink="/login">
-            <app-button 
-                btntext="Login"
-            >
-            </app-button>
+            <app-modal-login
+                *ngFor="let usuario of usuarios"
+                [usuario] = "usuario">
+            ></app-modal-login>
             </a>
         </ul>
     </div>
