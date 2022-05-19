@@ -38,6 +38,7 @@ export class ModalEditarUsuComponent implements OnInit {
   onSubmit(formDetailUser: NgForm){
     /*Creo el objeto editado y lo paso por consola*/ 
     const id = this.usuario.id;
+    
     const nombre = this.nombre;
     const apellido = this.apellido;
     const descripcion = this.descripcion;
@@ -49,6 +50,11 @@ export class ModalEditarUsuComponent implements OnInit {
     const telefono = this.telefono;
     const mail = this.mail;
     const password = this.password;
+
+    if ((this.nombre.length || this.apellido.length || this.descripcion.length || this.titulo.length || this.foto.length || this.github.length || this.linkedin.length || this.twitter.length || this.telefono.length || this.mail.length || this.password.length) === 0 ){
+      alert ("Por favor, complete todos los campos")
+    }
+
     const usuEdited = { id, nombre, apellido, descripcion, titulo, foto, github, 
                         linkedin, twitter, telefono, mail, password };
 

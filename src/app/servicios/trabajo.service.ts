@@ -14,7 +14,9 @@ const httpOptions= {
 })
 export class TrabajoService {
 
-  private apiUrl = 'http://localhost:8081'
+  //private apiUrl = 'http://localhost:8081'
+  private apiUrl = 'https://ap-portfoliobackend.herokuapp.com'
+  
   constructor(
     private http: HttpClient
   ) { }

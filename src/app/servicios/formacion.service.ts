@@ -13,7 +13,9 @@ const httpOptions= {
 })
 export class FormacionService {
 
-  private apiUrl = 'http://localhost:8081'
+  //private apiUrl = 'http://localhost:8081'
+  private apiUrl = 'https://ap-portfoliobackend.herokuapp.com'
+  
   constructor(
     private http: HttpClient
   ) { }
