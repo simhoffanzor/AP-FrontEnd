@@ -1,26 +1,30 @@
 nav {
-    width:100%;
-    height:10%;
-}
-#header {
-    background: #21252a;
-}
+        width:100%;
+        height:10%;
+    }
+    #header {
+        background: #21252a;
+    }
 
-nav img {
-    width:15%;
-}
+    nav img {
+        width:15%;
+    }
 
-#myNavbarToggler10{
-    margin-left:-7%;
-}
-.navbar .navbar-nav .nav-link {
-    color: white;
-    font-size: 1.3em;
-}
-.navbar .navbar-nav .nav-link:hover{
-    color: rgb(85, 244, 255);
-    font-size:1.5em;
-}
-.sm-icons {
-  flex-direction: row;
-}
+    #myNavbarToggler10{
+        margin-left:-7%;
+    }
+    .navbar .navbar-nav .nav-link {
+        color: white;
+        font-size: 1.3em;
+    }
+    .navbar .navbar-nav .nav-link:hover{
+        color: rgb(85, 244, 255);
+        font-size:1.5em;
+    }
+    .sm-icons {
+        flex-direction: row;
+    }
+
+    .sm-icons li {
+        margin-left: 15%;
+    }

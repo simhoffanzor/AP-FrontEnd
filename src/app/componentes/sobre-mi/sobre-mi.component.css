@@ -17,7 +17,7 @@
 
 .form{
     background-image: url('../../../assets/fondoSobreMi.png');
-    background-repeat:repeat-y;
+    background-repeat:no-repeat;
     background-attachment: fixed;
     margin-bottom: 3%;
 }
