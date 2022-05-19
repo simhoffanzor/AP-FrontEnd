@@ -1,13 +1,12 @@
 .item-usuario {
-    position:fixed;
-    margin-top:7%;
-    margin-left:40%;
+    margin-top:2%;
+    margin-left:10%;
     margin-right:5%;
 }
 
 .fotoPerfil{
     border-radius: 50%;
-    width:30%;
+    width:40%;
     margin:auto;
     margin-bottom:3%;
     margin-top:3%;

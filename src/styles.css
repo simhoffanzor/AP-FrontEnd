@@ -12,3 +12,7 @@
     font-family: 'LexendThin';
     src: url('assets/LexendDeca-Thin.ttf');
 }
+
+body {
+    background-color: black;
+}

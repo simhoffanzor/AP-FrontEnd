@@ -1,12 +1,21 @@
-<div>
-    <img src="../../../assets/fondoSobreMi.png" alt="Portfolio S. Imhoff Anzor" id="fondo">
-    
-    <div class="titulo">
-        <h1>SOBRE <br>MI</h1>
+<div class="form">
+    <div class="container-fluid">
+        <div class="row">
+        <div class="col">
+            <div class="titulo">
+                <h1>SOBRE <br>MI</h1>
+            </div>
+        </div>
+        <div class="col-2">
+            <div class="formaciones">
+                <app-sobre-mi-items
+                    *ngFor="let usuario of usuarios"
+                    [usuario] = "usuario"
+            ></app-sobre-mi-items>   
+            </div>
+        </div>
+        </div>
     </div>
-    <app-sobre-mi-items
-    *ngFor="let usuario of usuarios"
-    [usuario] = "usuario"
-    ></app-sobre-mi-items>   
-    
+
+
 </div>

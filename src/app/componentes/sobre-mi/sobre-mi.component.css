@@ -1,27 +1,34 @@
-@font-face {
-    font-family: 'LexendMedium';
-    src: url(../../../assets/LexendDeca-Medium.ttf);
-}
-
-#fondo{
-    max-width:100%;
-    position:fixed;
-}
-
 .titulo{
     width:100%;
-    position:fixed;
-    top: 33%;
-    left:5%;
     background-color:0,0,0,0;
+    margin-top: 6%;
+    padding:2%;
 }
 .titulo h1{
     font-family: 'LexendMedium';
     font-size:3.5rem;
     color:white;
-    letter-spacing: 1.5rem;
-    line-height:7rem;
-    text-align:left;
+    letter-spacing: 1.7rem;
 }
 
+.formaciones {
+    margin-top:3%;
+}
 
+.form{
+    background-image: url('../../../assets/fondoSobreMi.png');
+    background-repeat:repeat-y;
+    background-attachment: fixed;
+    margin-bottom: 3%;
+}
+
+.row{
+    margin-top:5%;
+}
+.col{
+    width: 40%;
+}
+
+.col-2{
+    width: 60%;
+}

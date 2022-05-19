@@ -13,7 +13,6 @@ const httpOptions= {
 })
 export class ProyectoService {
 
-  //private apiUrl = 'http://localhost:8081'
   private apiUrl = 'https://ap-portfoliobackend.herokuapp.com'
   constructor(
     private http: HttpClient
