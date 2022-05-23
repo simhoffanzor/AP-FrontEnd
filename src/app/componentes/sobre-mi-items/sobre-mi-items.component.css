@@ -1,26 +1,59 @@
-.item-usuario {
-    margin-top:2%;
-    margin-left:10%;
-    margin-right:5%;
+@media screen and (min-width: 520px){
+    .item-usuario {
+        margin-top:2%;
+        margin-left:10%;
+        margin-right:5%;
+    }
+    
+    .fotoPerfil{
+        border-radius: 50%;
+        width:40%;
+        margin:auto;
+        margin-bottom:3%;
+        margin-top:3%;
+        display:block;
+    }
+    
+    .row-2{
+        text-align: center;
+        width:80%;
+        margin:auto;
+        line-height: 2rem;
+    }
+    
+    h3{
+        text-align: center;
+        margin-top:2%;
+    }
 }
 
-.fotoPerfil{
-    border-radius: 50%;
-    width:40%;
-    margin:auto;
-    margin-bottom:3%;
-    margin-top:3%;
-    display:block;
-}
-
-.row-2{
-    text-align: center;
-    width:80%;
-    margin:auto;
-    line-height: 2rem;
-}
-
-h3{
-    text-align: center;
-    margin-top:2%;
+@media screen and (max-width: 490px){
+    .item-usuario {
+        margin-top:2%;
+        margin-left:10%;
+        margin-right:5%;
+    }
+    
+    .fotoPerfil{
+        border-radius: 50%;
+        width:40%;
+        margin:auto;
+        margin-bottom:3%;
+        margin-top:3%;
+        display:block;
+    }
+    
+    .row-2{
+        text-align: center;
+        width:80%;
+        margin:auto;
+        line-height: 2rem;
+        color: white;
+    }
+    
+    h3{
+        text-align: center;
+        margin-top:2%;
+        color:white;
+    }
 }

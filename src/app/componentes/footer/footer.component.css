@@ -1,26 +1,98 @@
-footer {
-    position: fixed;
-    height: 8%;
-    bottom: 0;
-    width: 100%;
-    background-color: #1a1c4b;
+
+@media screen and (min-width: 768px){
+    footer {
+        position: fixed;
+        height: 8%;
+        bottom: 0;
+        width: 100%;
+        background-color: #1a1c4b;
+    }
+    
+    #menu li {
+        padding-left: 3rem;
+        padding-right:3rem;
+        padding-bottom:2rem;
+        width: auto;
+    }
+    
+    a:hover {
+        color:white !important;
+        font-size: 1.2rem !important;
+        padding-bottom:2.2rem !important;
+    }
+    
+    .active-link {
+        color:white !important;
+        font-size: 1.3rem !important;
+        padding-bottom:2.4rem !important;
+    }
 }
 
-#menu li {
-    padding-left: 3rem;
-    padding-right:3rem;
-    padding-bottom:2rem;
-    width: auto;
+@media screen and (min-width: 520px)and (max-width: 768px){
+    footer {
+        position: fixed;
+        height: 8%;
+        bottom: 0;
+        width: 100%;
+        background-color: #1a1c4b;
+    }
+    
+    #menu li {
+        padding-left: 3rem;
+        padding-right:3rem;
+        padding-bottom:2rem;
+        width: auto;
+    }
+    
+    a:hover {
+        color:white !important;
+        font-size: 1.2rem !important;
+        padding-bottom:2.2rem !important;
+    }
+    
+    .active-link {
+        color:white !important;
+        font-size: 1.3rem !important;
+        padding-bottom:2.4rem !important;
+    }
 }
 
-a:hover {
-    color:white !important;
-    font-size: 1.2rem !important;
-    padding-bottom:2.2rem !important;
-}
+@media screen and (max-width: 490px){
+    footer {
+        position: fixed;
+        height: 15%;
+        bottom: 0;
+        width: 100%;
+        background-color: #1a1c4b;
+    }
+    
+    #menu {
+        flex-direction: row;
+    }
+    #menu li {
+        padding-left: 1rem;
+        padding-right:1rem;
+        /*padding-bottom:0.5rem;*/
+        width: auto;
+    }
+    
+    a {
+        font-size:1rem;
+    }
+    a:hover {
+        color:white !important;
+        font-size: 1rem !important;
+        /*padding-bottom:2.2rem !important;*/
+    }
+    
+    .active-link {
+        color:white !important;
+        font-size: 1rem !important;
+        /*padding-bottom:2.4rem !important;*/
+    }
 
-.active-link {
-    color:white !important;
-    font-size: 1.3rem !important;
-    padding-bottom:2.4rem !important;
+    .wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+      }
 }

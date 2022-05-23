@@ -14,7 +14,6 @@ import { SobreMiComponent } from './componentes/sobre-mi/sobre-mi.component';
 import { ProyectosComponent } from './componentes/proyectos/proyectos.component';
 import { FormacionComponent } from './componentes/formacion/formacion.component';
 import { SkillsComponent } from './componentes/skills/skills.component';
-import { ButtonComponent } from './componentes/header/button/button.component';
 import { ExperienciaItemComponent } from './componentes/experiencia-item/experiencia-item.component';
 import { FormacionItemComponent } from './componentes/formacion-item/formacion-item.component';
 import { SobreMiItemsComponent } from './componentes/sobre-mi-items/sobre-mi-items.component';
@@ -43,7 +42,6 @@ import { ModalLoginComponent } from './componentes/modales/modal-login/modal-log
     ProyectosComponent,
     FormacionComponent,
     SkillsComponent,
-    ButtonComponent,
     ExperienciaItemComponent,
     FormacionItemComponent,
     SobreMiItemsComponent,

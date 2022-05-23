@@ -1,9 +1,21 @@
-#toggleLogin{
-    display:flex;
-    margin:auto;
-    margin-top: 2%;
-    border-color:black;
+@media screen and (min-width: 520px){
+    #toggleLogin{
+        display:flex;
+        margin:auto;
+        margin-top: 2%;
+        border-color:black;
+    }
 }
+@media screen and (max-width: 490px){
+    #toggleLogin{
+        display:flex;
+        margin:auto;
+        margin-top: 2%;
+        border-color:black;
+        font-size:0.8em;
+    }
+}
+
 
 #toggleLogin:hover{
     background-color: black;
