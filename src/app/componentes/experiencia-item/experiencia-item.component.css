@@ -1,50 +1,105 @@
-.item-trabajo{
-    margin:2%;
-    padding: 10px 20px;
-    width:60%;
-    border-bottom: solid lightslategray 0.5px;
+@media screen and (min-width: 520){
+    .item-trabajo{
+        margin:2%;
+        padding: 10px 20px;
+        width:80%;
+        border-bottom: solid lightslategray 0.5px;
+    }
+    
+    .foto-trabajo{
+        border-radius: 50%;
+        width:95%;
+        display:block;
+    }
+    
+    .col-2{
+        width:10%;
+    }
+    
+    .col{
+        width:70%;
+        margin-right:0%;
+    }
+    
+    .col-3{
+        width:10%;
+    }
+    
+    .col-4{
+        width:10%;
+    }
+    
+    .fechas{
+        font-size: 0.9rem;
+    }
+    
+    p{
+        font-style: italic;
+    }
+    
+    button{
+        display:flex;
+        margin:auto;
+        margin-top: 2%;
+        border-color:black;
+    }
+    
+    button:hover{
+        background-color: black;
+        color:white;
+        border-color: grey;
+    }
 }
 
-.foto-trabajo{
-    border-radius: 50%;
-    width:80%;
-    display:block;
-}
-
-.col-2{
-    width:10%;
-}
-
-.col{
-    width:70%;
-    margin-right:0%;
-}
-
-.col-3{
-    width:10%;
-}
-
-.col-4{
-    width:10%;
-}
-
-.fechas{
-    font-size: 0.9rem;
-}
-
-p{
-    font-style: italic;
-}
-
-button{
-    display:flex;
-    margin:auto;
-    margin-top: 2%;
-    border-color:black;
-}
-
-button:hover{
-    background-color: black;
-    color:white;
-    border-color: grey;
+@media screen and (max-width: 490px){
+    .item-trabajo{
+        margin:2%;
+        padding: 10px 20px;
+        width:100%;
+        border-bottom: solid lightslategray 0.5px;
+    }
+    
+    .foto-trabajo{
+        border-radius: 50%;
+        width:95%;
+        display:block;
+    }
+    
+    .col-2{
+        width:20%;
+    }
+    
+    .col{
+        width:50%;
+        margin-right:0%;
+    }
+    
+    .col-3{
+        width:15%;
+    }
+    
+    .col-4{
+        width:15%;
+    }
+    
+    .fechas{
+        font-size: 0.9rem;
+    }
+    
+    p{
+        font-style: italic;
+    }
+    
+    button{
+        display:flex;
+        margin:auto;
+        margin-top: 2%;
+        border-color:black;
+    }
+    
+    button:hover{
+        background-color: black;
+        color:white;
+        border-color: grey;
+    }
 }

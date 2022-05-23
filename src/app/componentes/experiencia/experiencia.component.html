@@ -2,6 +2,7 @@
     <div class="titulo">
         <h1>MI EXPERIENCIA</h1>
         <app-modal-agregar-exp
+            class="botonAgregar"
             *ngIf="this.logueado"
             (onAddExp)="addExp($event)"
         ></app-modal-agregar-exp>

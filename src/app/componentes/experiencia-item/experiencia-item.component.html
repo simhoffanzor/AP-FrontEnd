@@ -17,7 +17,7 @@
                 <p>{{trabajo.descripcion}}</p>
             </div>
             <div class="col-3">
-                <!-- BOTÓN PARA ELIMINAR-->
+                
                 <button 
                     *ngIf="this.logueado"
                     type="button"
@@ -28,7 +28,7 @@
                 </button>
             </div>
             <div class="col-4">
-                <!--EDITAR EXPERIENCIA-->
+                
                 <app-modal-editar-exp
                 *ngIf="this.logueado"
                 [trabajo]="this.trabajo"

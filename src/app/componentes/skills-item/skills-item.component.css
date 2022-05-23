@@ -1,72 +1,149 @@
-.item-skill {
-    width:80%;
-    background: white;
-    padding:1%;
-    margin-bottom: 3%;
-    margin-left:5%;
-    border: dashed navy 1px;
+@media screen and (min-width: 520){
+    .item-skill {
+        width:80%;
+        background: white;
+        padding:1%;
+        margin-bottom: 3%;
+        margin-left:5%;
+        border: dashed navy 1px;
+        
+    }
     
+    .col {
+        width:50%;
+        margin:auto;
+        margin-bottom:2%;
+        margin-top:3%;
+    }
+    
+    .col-2 {
+        width:50%;
+        margin:auto;
+        margin-bottom:2%;
+        margin-top:3%;
+    }
+    
+    mat-spinner{
+        border-radius: 50%;
+        margin:auto;
+    }
+    h4{
+        margin-top: 3%;
+        margin-bottom: 7%;
+        font-family:'LexendSemiBold';
+        color:black;
+        text-align: center;
+    }
+    h5{
+        margin-top:3%;
+        font-family:'LexendThin';
+        font-weight: bolder;
+        color:black;
+    }
+    
+    :host ::ng-deep  circle, .mat-spinner circle {   
+        stroke: black;
+    }
+    
+    .col{
+        width:50%;
+        text-align: center;
+    }
+    
+    .col-2{
+        width:50%;
+    }
+    .imagen-skill{
+        width:75%;
+        margin:auto;
+        display:block;
+    }
+    
+    button{
+        display:flex;
+        margin:auto;
+        margin-top: 2%;
+        border-color:black;
+    }
+    
+    button:hover{
+        background-color: black;
+        color:white;
+        border-color: grey;
+    }
 }
 
-.col {
-    width:50%;
-    margin:auto;
-    margin-bottom:2%;
-    margin-top:3%;
-}
-
-.col-2 {
-    width:50%;
-    margin:auto;
-    margin-bottom:2%;
-    margin-top:3%;
-}
-
-mat-spinner{
-    border-radius: 50%;
-    margin:auto;
-}
-h4{
-    margin-top: 3%;
-    margin-bottom: 7%;
-    font-family:'LexendSemiBold';
-    color:black;
-    text-align: center;
-}
-h5{
-    margin-top:3%;
-    font-family:'LexendThin';
-    font-weight: bolder;
-    color:black;
-}
-
-:host ::ng-deep  circle, .mat-spinner circle {   
-    stroke: black;
-}
-
-.col{
-    width:50%;
-    text-align: center;
-}
-
-.col-2{
-    width:50%;
-}
-.imagen-skill{
-    width:75%;
-    margin:auto;
-    display:block;
-}
-
-button{
-    display:flex;
-    margin:auto;
-    margin-top: 2%;
-    border-color:black;
-}
-
-button:hover{
-    background-color: black;
-    color:white;
-    border-color: grey;
+@media screen and (max-width: 490px){
+    .item-skill {
+        width:70%;
+        background: white;
+        padding:1%;
+        margin-bottom: 3%;
+        margin:auto;
+        border: dashed navy 1px;
+    }
+    
+    .col {
+        width:30%;
+        margin:auto;
+        margin-bottom:2%;
+        margin-top:3%;
+    }
+    
+    .col-2 {
+        width:70%;
+        margin:auto;
+        margin-bottom:2%;
+        margin-top:3%;
+    }
+    
+    mat-spinner{
+        border-radius: 50%;
+        margin:auto;
+    }
+    h4{
+        margin-top: 3%;
+        margin-bottom: 7%;
+        font-family:'LexendSemiBold';
+        color:black;
+        text-align: center;
+    }
+    h5{
+        margin-top:3%;
+        font-family:'LexendThin';
+        font-weight: bolder;
+        color:black;
+        font-size: 0.8rem;
+    }
+    
+    :host ::ng-deep  circle, .mat-spinner circle {   
+        stroke: black;
+    }
+    
+    .col{
+        width:50%;
+        text-align: center;
+    }
+    
+    .col-2{
+        width:50%;
+    }
+    .imagen-skill{
+        width:75%;
+        margin:auto;
+        display:block;
+    }
+    
+    button{
+        display:flex;
+        margin:auto;
+        margin-top: 2%;
+        border-color:black;
+    }
+    
+    button:hover{
+        background-color: black;
+        color:white;
+        border-color: grey;
+    }
 }

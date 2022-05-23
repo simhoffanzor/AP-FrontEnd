@@ -1,20 +1,43 @@
-.titulo{
-    width:100%;
-    background-color:0,0,0,0;
-    margin-top: 6%;
-    padding:2%;
-}
-.titulo h1{
-    font-family: 'LexendMedium';
-    text-align: center;
-    font-size:3.5rem;
-    color:white;
-    letter-spacing: 1.7rem;
+@media screen and (min-width: 520){
+    .titulo{
+        width:100%;
+        background-color:0,0,0,0;
+        margin-top: 6%;
+        padding:2%;
+    }
+    .titulo h1{
+        font-family: 'LexendMedium';
+        text-align: center;
+        font-size:3.5rem;
+        color:white;
+        letter-spacing: 1.7rem;
+    }
+    
+    .proy{
+        margin-bottom: 4%;
+        background-image: url("../../../assets/fondoProyectos.png");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
 }
 
-.proy{
-    margin-bottom: 4%;
-    background-image: url("../../../assets/fondoProyectos.png");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+@media screen and (max-width: 490px){
+    .titulo{
+        width:100%;
+        background-color:0,0,0,0;
+        margin-top: 15%;
+        padding:2%;
+    }
+    .titulo h1{
+        font-family: 'LexendMedium';
+        text-align: center;
+        font-size:2rem;
+        color:white;
+        letter-spacing: 0.8rem;
+    }
+    
+    .proy{
+        background-image: url('../../../assets/fondoDifuminado.png');
+        margin-bottom:35%;
+    }
 }

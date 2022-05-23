@@ -1,25 +1,56 @@
-.titulo{
-    width:100%;
-    background-color:0,0,0,0;
-    margin-top: 6%;
-    padding:2%;
-}
-.titulo h1{
-    font-family: 'LexendMedium';
-    text-align: center;
-    font-size:3.5rem;
-    color:white;
-    letter-spacing: 1.7rem;
+@media screen and (min-width: 520){
+    .titulo{
+        width:100%;
+        background-color:0,0,0,0;
+        margin-top: 6%;
+        padding:2%;
+    }
+    .titulo h1{
+        font-family: 'LexendMedium';
+        text-align: center;
+        font-size:3.5rem;
+        color:white;
+        letter-spacing: 1.7rem;
+    }
+    
+    .ski{
+        background-image: url('../../../assets/fondoDifuminado.png');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        margin-bottom: 4%;
+    }
+    
+    .wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+      }
 }
 
-.ski{
-    background-image: url('../../../assets/fondoDifuminado.png');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    margin-bottom: 4%;
+@media screen and (max-width: 490px){
+    .titulo{
+        width:100%;
+        background-color:0,0,0,0;
+        margin-top: 15%;
+        padding:2%;
+    }
+    .titulo h1{
+        font-family: 'LexendMedium';
+        text-align: center;
+        font-size:2rem;
+        color:white;
+        letter-spacing: 0.8rem;
+    }
+    
+    .ski{
+        background-image: url('../../../assets/fondoDifuminado.png');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        margin-bottom: 35%;
+    }
+    
+    .wrapper {
+        margin-top:5%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+      }
 }
-
-.wrapper {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-  }

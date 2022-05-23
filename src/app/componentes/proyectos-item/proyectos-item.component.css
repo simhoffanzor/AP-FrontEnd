@@ -1,47 +1,95 @@
-.item-proyecto {
-    margin:2%;
-    width:40%;
-    margin:auto;
-    padding: 10px 20px;
-    font-size:0.9rem;
+@media screen and (min-width: 520){
+    .item-proyecto {
+        margin:2%;
+        width:40%;
+        margin:auto;
+        padding: 10px 20px;
+        font-size:0.9rem;
+    }
+    
+    .item-proyecto h5{
+        font-size:1.5rem;
+    }
+    
+    .col{
+        width:50%;
+        margin:auto;
+        margin-bottom:3%;
+    }
+    
+    .col-2{
+        width:50%;
+        margin:auto;
+        margin-bottom:3%;
+    }
+    .card-body{
+        text-align: center;
+    }
+    
+    .foto-proyecto{
+        width:70%;
+    }
+    
+    .foto-proyecto:hover{
+        width:100%;
+    }
+    
+    button{
+        display:flex;
+        margin:auto;
+        margin-top: 2%;
+        border-color:black;
+    }
+    
+    button:hover{
+        background-color: black;
+        color:white;
+        border-color: grey;
+    }
 }
 
-.item-proyecto h5{
-    font-size:1.5rem;
-}
-
-.col{
-    width:50%;
-    margin:auto;
-    margin-bottom:3%;
-}
-
-.col-2{
-    width:50%;
-    margin:auto;
-    margin-bottom:3%;
-}
-.card-body{
-    text-align: center;
-}
-
-.foto-proyecto{
-    width:70%;
-}
-
-.foto-proyecto:hover{
-    width:100%;
-}
-
-button{
-    display:flex;
-    margin:auto;
-    margin-top: 2%;
-    border-color:black;
-}
-
-button:hover{
-    background-color: black;
-    color:white;
-    border-color: grey;
+@media screen and (max-width: 490px){
+    .item-proyecto {
+        margin:2%;
+        width:100%;
+        margin:auto;
+        padding: 10px 20px;
+        font-size:0.9rem;
+    }
+    
+    .item-proyecto h5{
+        font-size:1.5rem;
+    }
+    
+    .col{
+        width:50%;
+        margin:auto;
+        margin-bottom:3%;
+    }
+    
+    .col-2{
+        width:50%;
+        margin:auto;
+        margin-bottom:3%;
+    }
+    .card-body{
+        text-align: center;
+    }
+    
+    .foto-proyecto{
+        width:100%;
+    }
+    
+    button{
+        display:flex;
+        margin:auto;
+        margin-top: 2%;
+        border-color:black;
+    }
+    
+    button:hover{
+        background-color: black;
+        color:white;
+        border-color: grey;
+    }
 }
