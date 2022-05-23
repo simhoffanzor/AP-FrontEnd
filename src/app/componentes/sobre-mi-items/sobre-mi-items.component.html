@@ -7,7 +7,7 @@
                 *ngIf="this.logueado"
                 [usuario]="this.usuario"
             ></app-modal-editar-usu>
-            <h3>{{usuario.nombre}} {{usuario.apellido}}</h3>
+            <h4>{{usuario.nombre}} {{usuario.apellido}}</h4>
             <img 
                 src="{{usuario.foto}}" 
                 alt="Foto de Perfil"
@@ -15,10 +15,13 @@
             />
         </div>
         <div class="row-2">
-            <h4>{{usuario.titulo}}</h4>
+            <h3>{{usuario.titulo}}</h3>
             <p>
             {{usuario.descripcion}}
             </p>
+        </div>
+        <div class="row-3">
+            
         </div>
     </div>
 </div>

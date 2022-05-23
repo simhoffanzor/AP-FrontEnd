@@ -1,19 +1,14 @@
 <div class="form">
-    <div class="container-fluid">
-        <div class="row">
-        <div class="col">
-            <div class="titulo">
-                <h1>SOBRE <br>MI</h1>
-            </div>
+    <div class="wrapper">
+        <div class="titulo">
+            <h1>SOBRE <br>MI</h1>
         </div>
-        <div class="col-2">
-            <div class="formaciones">
-                <app-sobre-mi-items
-                    *ngFor="let usuario of usuarios"
-                    [usuario] = "usuario"
+        <div class="datos">
+            <app-sobre-mi-items
+                *ngFor="let usuario of usuarios"
+               [usuario] = "usuario"
             ></app-sobre-mi-items>   
-            </div>
-        </div>
         </div>
     </div>
+           
 </div>
