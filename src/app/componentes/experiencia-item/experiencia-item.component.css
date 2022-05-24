@@ -1,14 +1,14 @@
-@media screen and (min-width: 520){
+@media screen and (min-width: 520px){
     .item-trabajo{
         margin:2%;
         padding: 10px 20px;
-        width:80%;
+        width:60%;
         border-bottom: solid lightslategray 0.5px;
     }
     
     .foto-trabajo{
         border-radius: 50%;
-        width:95%;
+        width:80%;
         display:block;
     }
     

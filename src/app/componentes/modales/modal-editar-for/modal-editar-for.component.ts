@@ -47,4 +47,5 @@ export class ModalEditarForComponent implements OnInit {
     
     formDetailUser.reset();
   }
+
 }

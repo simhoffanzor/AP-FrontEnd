@@ -35,5 +35,4 @@ export class ModalAgregarExpComponent implements OnInit {
     formDetailUser.reset();
   }
 
-
 }
