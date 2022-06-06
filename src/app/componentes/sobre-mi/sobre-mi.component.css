@@ -29,7 +29,6 @@
 @media screen and (max-width: 490px){
     .titulo{
         width:100%;
-        /*background-color:0,0,0,0;*/
         background-image: url('../../../assets/fondoSobreMi.png');
         margin-top: 8%;
         padding:2%;
@@ -43,9 +42,6 @@
     }
 
     .form{
-        /*background-image: url('../../../assets/fondoSobreMi.png');
-        background-repeat:no-repeat;
-        background-attachment: fixed;*/
         margin-bottom: 10%;
         margin-top:5%;
     }
