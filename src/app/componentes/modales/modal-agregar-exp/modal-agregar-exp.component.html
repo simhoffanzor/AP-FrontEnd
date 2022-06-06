@@ -4,14 +4,14 @@
     id="toggleAgregarExp"
     (click)="modal.open(contenido)">
     
-    Agregar experiencia
+    Add experience
 
 </button>
 
 <!--MODAL-->
 <ng-template #contenido let-modal>
     <div class="modal-header">
-        <h5 class="modal-title">Complete los campos</h5>
+        <h5 class="modal-title">Complete all fields</h5>
         <i class="fa-solid fa-xmark"
            (click)="modal.dismiss()"
         ></i>
@@ -26,62 +26,62 @@
         (ngSubmit)="onSubmit(formDetailUser)"
     >
         <div class="form-control">
-            <label for="puesto">Puesto</label>
+            <label for="puesto">Job</label>
             <input 
                 type="text" 
                 name="puesto" 
                 id="puesto" 
-                placeholder="Nombre del puesto"
+                placeholder="What was/is the job?"
                 [(ngModel)]="puesto"
             />
         </div>
         <div class="form-control">
-            <label for="lugar">Lugar</label>
+            <label for="lugar">Place</label>
             <input 
                 type="text" 
                 name="lugar" 
                 id="lugar" 
-                placeholder="Institución o ciudad" 
+                placeholder="Where did you work?" 
                 [(ngModel)]="lugar"
             />
         </div>
         <div class="form-control">
-            <label for="fechaInicio">Fecha de inicio</label>
+            <label for="fechaInicio">Start date</label>
             <input 
                 type="text" 
                 name="fechaInicio" 
                 id="fechaInicio" 
-                placeholder="Fecha de inicio en el puesto" 
+                placeholder="When did you start working there?" 
                 [(ngModel)]="fechaInicio"
             />
         </div>
         <div class="form-control">
-            <label for="fechaFinal">Fecha de final</label>
+            <label for="fechaFinal">End date</label>
             <input 
                 type="text" 
                 name="fechaFinal" 
                 id="fechaFinal" 
-                placeholder="Fecha de finalización (o si continúa)" 
+                placeholder="When did you stop working there? (Could be 'present')" 
                 [(ngModel)]="fechaFinal"
             />
         </div>
         <div class="form-control">
-            <label for="descripcion">Descripcion</label>
+            <label for="descripcion">Description</label>
             <input 
                 type="text" 
                 name="descripcion" 
                 id="descripcion" 
-                placeholder="Descripción breve de las funciones" 
+                placeholder="How can you describe your job?" 
                 [(ngModel)]="descripcion"
             />
         </div>
         <div class="form-control">
-            <label for="fotoLugar">Imagen</label>
+            <label for="fotoLugar">Image</label>
             <input 
                 type="text" 
                 name="fotoLugar" 
                 id="fotoLugar" 
-                placeholder="Logo de la institución o que represente el trabajo" 
+                placeholder="Is there an image that represents the place you worked on?" 
                 [(ngModel)]="fotoLugar"
             />
         </div>
@@ -89,7 +89,7 @@
             <button
                 type="submit"
                 class="btn btn-primary"
-                (click)="modal.close()">Guardar</button>
+                (click)="modal.close()">Save</button>
         </div>
     </form>
     </div>

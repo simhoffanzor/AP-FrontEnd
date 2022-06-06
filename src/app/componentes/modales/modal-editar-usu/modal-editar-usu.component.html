@@ -12,7 +12,7 @@
 <!--MODAL-->
 <ng-template #contenido let-modal>
     <div class="modal-header">
-        <h5 class="modal-title">Edición de usuario</h5>
+        <h5 class="modal-title">Complete all fields</h5>
         <i class="fa-solid fa-xmark"
            (click)="modal.dismiss()"
         ></i>
@@ -28,9 +28,9 @@
     >
 
     <div class="row" id="datos">
-        <h6>Datos personales</h6>
+        <h6>What do you want people to know?</h6>
         <div class="form-control">
-            <label for="nombre">Nombre</label>
+            <label for="nombre">Name</label>
             <input 
                 type="text" 
                 name="nombre" 
@@ -40,7 +40,7 @@
             />
         </div>
         <div class="form-control">
-            <label for="apellido">Apellido</label>
+            <label for="apellido">Last name</label>
             <input 
                 type="text" 
                 name="apellido" 
@@ -50,7 +50,7 @@
             />
         </div>
         <div class="form-control">
-            <label for="titulo">Título</label>
+            <label for="titulo">Current job</label>
             <input 
                 type="text" 
                 name="titulo" 
@@ -60,7 +60,7 @@
             />
         </div>
         <div class="form-control">
-            <label for="descripcion">Descripción</label>
+            <label for="descripcion">Description</label>
             <input 
                 type="text" 
                 name="descripcion" 
@@ -70,7 +70,7 @@
             />
         </div>
         <div class="form-control">
-            <label for="foto">Foto</label>
+            <label for="foto">Picture</label>
             <input
                 type="text"
                 name="foto"
@@ -79,7 +79,7 @@
                 [(ngModel)]="foto"
             />
         </div>
-        <h6>Datos de contacto</h6>
+        <h6>How can people contact you?</h6>
         <div class="form-control">
             <label for="github">Github</label>
             <input
@@ -111,7 +111,7 @@
             />
         </div>
         <div class="form-control">
-            <label for="telefono">Telefono</label>
+            <label for="telefono">Phone</label>
             <input
                 type="text"
                 name="telefono"
@@ -120,9 +120,9 @@
                 [(ngModel)]="telefono"
             />
         </div>
-        <h6>Inicio de sesión</h6>
+        <h6>Log In information</h6>
         <div class="form-control">
-            <label for="mail">Mail de usuario</label>
+            <label for="mail">E-mail</label>
             <input
                 type="text"
                 name="mail"
@@ -132,7 +132,7 @@
             />
         </div>
         <div class="form-control">
-            <label for="password">Contraseña</label>
+            <label for="password">Password</label>
             <input
                 type="password"
                 name="password"
@@ -146,7 +146,7 @@
             <button
                 type="submit"
                 class="btn btn-primary"
-                (click)="modal.close()">Guardar</button>
+                (click)="modal.close()">Save</button>
         </div>
     </form>
     </div>

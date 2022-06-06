@@ -12,7 +12,7 @@
 <!--MODAL-->
 <ng-template #contenido let-modal>
     <div class="modal-header">
-        <h5 class="modal-title">Complete los campos</h5>
+        <h5 class="modal-title">Complete all fields</h5>
         <i class="fa-solid fa-xmark"
            (click)="modal.dismiss()"
         ></i>
@@ -26,71 +26,71 @@
         #formDetailUser="ngForm"
         (ngSubmit)="onSubmit(formDetailUser)"
     >
-        <div class="form-control">
-            <label for="puesto">Puesto</label>
-            <input 
-                type="text" 
-                name="puesto" 
-                id="puesto"
-                placeholder="{{trabajo.puesto}}" 
-                [(ngModel)]="puesto"
-            />
-        </div>
-        <div class="form-control">
-            <label for="lugar">Lugar</label>
-            <input 
-                type="text" 
-                name="lugar" 
-                id="lugar" 
-                placeholder="{{trabajo.lugar}}" 
-                [(ngModel)]="lugar"
-            />
-        </div>
-        <div class="form-control">
-            <label for="fechaInicio">Fecha de inicio</label>
-            <input 
-                type="text" 
-                name="fechaInicio" 
-                id="fechaInicio" 
-                placeholder="{{trabajo.fechaInicio}}" 
-                [(ngModel)]="fechaInicio"
-            />
-        </div>
-        <div class="form-control">
-            <label for="fechaFinal">Fecha de final</label>
-            <input 
-                type="text" 
-                name="fechaFinal" 
-                id="fechaFinal" 
-                placeholder="{{trabajo.fechaFinal}}" 
-                [(ngModel)]="fechaFinal"
-            />
-        </div>
-        <div class="form-control">
-            <label for="descripcion">Descripcion</label>
-            <input 
-                type="text" 
-                name="descripcion" 
-                id="descripcion" 
-                placeholder="Agregue la nueva descripción del trabajo" 
-                [(ngModel)]="descripcion"
-            />
-        </div>
-        <div class="form-control">
-            <label for="fotoLugar">Imagen</label>
-            <input 
-                type="text" 
-                name="fotoLugar" 
-                id="fotoLugar" 
-                placeholder="Logo de la institución o que represente el trabajo" 
-                [(ngModel)]="fotoLugar"
-            />
-        </div>
+    <div class="form-control">
+        <label for="puesto">Job</label>
+        <input 
+            type="text" 
+            name="puesto" 
+            id="puesto" 
+            placeholder="What was/is the job?"
+            [(ngModel)]="puesto"
+        />
+    </div>
+    <div class="form-control">
+        <label for="lugar">Place</label>
+        <input 
+            type="text" 
+            name="lugar" 
+            id="lugar" 
+            placeholder="Where did you work?" 
+            [(ngModel)]="lugar"
+        />
+    </div>
+    <div class="form-control">
+        <label for="fechaInicio">Start date</label>
+        <input 
+            type="text" 
+            name="fechaInicio" 
+            id="fechaInicio" 
+            placeholder="When did you start working there?" 
+            [(ngModel)]="fechaInicio"
+        />
+    </div>
+    <div class="form-control">
+        <label for="fechaFinal">End date</label>
+        <input 
+            type="text" 
+            name="fechaFinal" 
+            id="fechaFinal" 
+            placeholder="When did you stop working there? (Could be 'present')" 
+            [(ngModel)]="fechaFinal"
+        />
+    </div>
+    <div class="form-control">
+        <label for="descripcion">Description</label>
+        <input 
+            type="text" 
+            name="descripcion" 
+            id="descripcion" 
+            placeholder="How can you describe your job?" 
+            [(ngModel)]="descripcion"
+        />
+    </div>
+    <div class="form-control">
+        <label for="fotoLugar">Image</label>
+        <input 
+            type="text" 
+            name="fotoLugar" 
+            id="fotoLugar" 
+            placeholder="Is there an image that represents the place you worked on?" 
+            [(ngModel)]="fotoLugar"
+        />
+    </div>
         <div class="modal-footer">
             <button
                 type="submit"
                 class="btn btn-primary"
-                (click)="modal.close()">Guardar</button>
+                (click)="modal.close()">Save</button>
         </div>
     </form>
     </div>

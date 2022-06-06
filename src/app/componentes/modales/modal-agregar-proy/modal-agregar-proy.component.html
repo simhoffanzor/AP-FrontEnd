@@ -6,14 +6,14 @@
     (click)="modal.open(contenido)">
     
     
-    Agregar proyecto
+    Add project
 
 </button>
 
 <!--MODAL-->
 <ng-template #contenido let-modal>
     <div class="modal-header">
-        <h5 class="modal-title">Complete los campos</h5>
+        <h5 class="modal-title">Complete all fields</h5>
         <i class="fa-solid fa-xmark"
            (click)="modal.dismiss()"
         ></i>
@@ -28,52 +28,52 @@
         (ngSubmit)="onSubmit(formDetailUser)"
     >
         <div class="form-control">
-            <label for="nombre">Nombre</label>
+            <label for="nombre">Name</label>
             <input 
                 type="text" 
                 name="nombre" 
                 id="nombre" 
-                placeholder="Nombre del proyecto"
+                placeholder="What's the name of your project?"
                 [(ngModel)]="nombre"
             />
         </div>
         <div class="form-control">
-            <label for="fecha">Fecha</label>
+            <label for="fecha">Date</label>
             <input 
                 type="text" 
                 name="fecha" 
                 id="fecha" 
-                placeholder="Fecha en la que se llevó a cabo" 
+                placeholder="When did you work on it?" 
                 [(ngModel)]="fecha"
             />
         </div>
         <div class="form-control">
-            <label for="descripcion">Descripción</label>
+            <label for="descripcion">Description</label>
             <input 
                 type="text" 
                 name="descripcion" 
                 id="descripcion" 
-                placeholder="Breve descripción del proyecto" 
+                placeholder="Can you describe your project?" 
                 [(ngModel)]="descripcion"
             />
         </div>
         <div class="form-control">
-            <label for="fotoProyecto">Imagen</label>
+            <label for="fotoProyecto">Image</label>
             <input 
                 type="text" 
                 name="fotoProyecto" 
                 id="fotoProyecto" 
-                placeholder="Foto o imagen del proyecto" 
+                placeholder="Is there a picture of your project?" 
                 [(ngModel)]="fotoProyecto"
             />
         </div>
         <div class="form-control">
-            <label for="url">Enlace</label>
+            <label for="url">Link</label>
             <input 
                 type="text" 
                 name="url" 
                 id="url" 
-                placeholder="Enlace en donde se pueda ver el proyecto" 
+                placeholder="Which is your project's Github link?" 
                 [(ngModel)]="url"
             />
         </div>
@@ -81,7 +81,7 @@
             <button
                 type="submit"
                 class="btn btn-primary"
-                (click)="modal.close()">Guardar</button>
+                (click)="modal.close()">Save</button>
         </div>
     </form>
 

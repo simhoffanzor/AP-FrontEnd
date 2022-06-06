@@ -12,7 +12,7 @@
 <!--MODAL-->
 <ng-template #contenido let-modal>
     <div class="modal-header">
-        <h5 class="modal-title">Complete los campos</h5>
+        <h5 class="modal-title">Complete all fields</h5>
         <i class="fa-solid fa-xmark"
            (click)="modal.dismiss()"
         ></i>
@@ -26,41 +26,41 @@
         #formDetailUser="ngForm"
         (ngSubmit)="onSubmit(formDetailUser)"
     >
-        <div class="form-control">
-            <label for="nombre">Nombre</label>
-            <input 
-                type="text" 
-                name="nombre" 
-                id="nombre" 
-                placeholder="Nombre de la habilidad"
-                [(ngModel)]="nombre"
-            />
-        </div>
-        <div class="form-control">
-            <label for="nivel">Nivel</label>
-            <input 
-                type="text" 
-                name="nivel" 
-                id="nivel" 
-                placeholder="Nivel del desempeño (del 1 al 100)" 
-                [(ngModel)]="nivel"
-            />
-        </div>
-        <div class="form-control">
-            <label for="url">Imagen</label>
-            <input 
-                type="text" 
-                name="url" 
-                id="url" 
-                placeholder="Imagen distintiva de la habilidad" 
-                [(ngModel)]="url"
-            />
-        </div>
+    <div class="form-control">
+        <label for="nombre">Name</label>
+        <input 
+            type="text" 
+            name="nombre" 
+            id="nombre" 
+            placeholder="Skill"
+            [(ngModel)]="nombre"
+        />
+    </div>
+    <div class="form-control">
+        <label for="nivel">Level</label>
+        <input 
+            type="text" 
+            name="nivel" 
+            id="nivel" 
+            placeholder="From 1 to 100" 
+            [(ngModel)]="nivel"
+        />
+    </div>
+    <div class="form-control">
+        <label for="url">Image</label>
+        <input 
+            type="text" 
+            name="url" 
+            id="url" 
+            placeholder="Picture that describes your skill" 
+            [(ngModel)]="url"
+        />
+    </div>
         <div class="modal-footer">
             <button
                 type="submit"
                 class="btn btn-primary"
-                (click)="modal.close()">Guardar</button>
+                (click)="modal.close()">Save</button>
         </div>
     </form>
     </div>
